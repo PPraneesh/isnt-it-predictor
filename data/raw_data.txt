@@ -1,0 +1,5006 @@
+my dear friends welcome to
+classes on applied data science with
+python this is lecture number
+362 in this lecture we will try to
+understand gradient descent algorithm
+and its geometric intuition so when we
+learning about Maxima and Minima we saw
+examples where solving DF by DX = 0
+isn't it this is DF by DX = 0
+or or I can say Vector sense in Vector
+sense I can write it as d f with respect
+to x = 0 solving this equation is not
+straightforward
+solving is difficult
+isn't it finding finding solution for
+this this is not straightforward because
+solving this equation DF by DX equal 0
+could be tricky where we said that
+solving this equation is not easy when
+solving these equations are not easy we
+have an alternative the alternative is
+called what is that
+alternative
+gradient
+gradient
+descent gradient descent
+algorithm what is the this gradient
+descent algorithm we will try to
+understand a gradient descent algorithm
+is an iterative algorithm it's an
+iterative algorithm it is an
+iterative algorithm this gradient decent
+algorithm is an iterative algorithm it's
+an iterative algorithm which is very
+easy to implement in modern computer and
+it works like this first we make a guess
+of what is our X we will guess this what
+is our X is pick a random number pick a
+random number a random number as random
+number let me say x KN isn't it yes let
+me assume X not this is your first guess
+we would like to find what is we would
+like to find X star its first guess is
+first guess is X not isn't it because
+the problem that we are trying to solve
+here is x equal to
+argumen argumen of f of x/ x isn't it so
+first it guesses whether the the random
+value X random value guess is the random
+value X KN then using this gradient
+decent algorithm now it will moves to
+new value of X1 then it will go to X2 I
+can say what is the procedure my X notot
+is first guess this x notot is first
+guess of what of xar isn't it
+X1 this X1 is it it
+iteration iteration number one in X1 I
+can find
+X2 X2
+means iteration number
+2 isn't it so on
+XK I can
+say iteration
+K isn't it yes which is very close to
+just a I must find X KN X1 X2 so on XK
+this XK which is very close to X star
+objective in this iterative algorithm is
+as your iteration number increases you
+have to move closer and closer to xter
+isn't it this is optimal solution this
+is your objective objective is as your
+iteration number increases you have to
+move closer and closer to your xar now
+let's see how it works let's understand
+gradient descent geometrically first
+let's take a simple example let me take
+one simple example here just see this
+one yes this is simp let's take a simple
+example this is uh let's uh let's assume
+I have a curve like this so for this
+curve I want to find what we have to
+find here we have to find
+we have to find which one we have to
+find we have to find X star we have to
+find xar we would like to find xar isn't
+it what is my
+xar xar equal to XR equal to
+Arin argumen of f
+ofx over X isn't it this is what I want
+to find imagine if I want to find Maxima
+always remember if you want to minimize
+that that function Min Min of f ofx is
+equalent to what is minimum of f ofx in
+optimization your xar is arment of f ofx
+minimum of f ofx is maximum of minus F
+ofx this is very very simple rule in
+optimization or maximization of f ofx is
+equal to some you can write it as
+minimum of Min - F ofx so if you learn
+if so if you learn for Minima you can do
+same same same thing for Maxima isn't it
+by just changing the sign of the
+function if you know the Minima just you
+can just by changing the sign you can
+convert maxim of f ofx is minimum of
+minus F ofx minimum of f ofx is maximum
+of minus F ofx so if you know how to
+find Maxima and Minima you can always
+calculate other one is basically maximum
+of FX equal to minimum of minus f of x
+it is easy to find other thing that's
+what it says hence let's study for
+Minima let's study for Minima if you see
+visually what is this what is this
+particular point this point what is this
+this point is Minima because every other
+point value is greater than this value
+of f of x isn't it isn't it f ofx is
+greater at every other point except at
+origin so now let's go to the core idea
+core geometrical intuition the core
+geometrical intuition of gradient
+descent geometry works like this let's
+take a point here this is my point in
+this one just see this one its gradient
+is just if I take let me consider this
+one yes if I take a point here if I take
+a point here what I have to do it
+gradient is positive slope isn't it what
+is the gradient if I take tangent if I
+consider this Theta this Theta is
+between 0 and 90 0 less than Theta less
+than 90 therefore tan Theta it is a
+positive value what is the slope here
+slope is here slope here the slope at
+this this slope is negative why because
+this this is this is this is positive
+slope here the here it is uh the slope
+here is zero isn't it the slope on on
+one side of minimum isn't it on one side
+of minimum is positive here what happens
+just If You observe here this if you
+consider this point this is the tangent
+what is the tan Theta here tan Theta is
+negative isn't it what why why because
+here this you can you can see the angle
+here isn't it because of this Theta with
+respect to xaxis we already discussed
+all these things where it is positive
+where it is negative in my previous
+lectures this I discussed this I
+discussed this also I discussed is isn't
+it therefore let me repeat its gradient
+is positive slope isn't it the Theta
+lies between why it is positive Theta
+lies between 0 and 9 90 this is posit
+this is positive value what is the slope
+here slope at Minima what is the slope
+here this is Minima isn't it what is
+slope at Minima is zero the slope on one
+side of Minima is positive let's look at
+other side of Minima what is the slope
+here just we will try to understand
+slope here the slope here is negative
+isn't it what is the angle with x-axis
+this Theta is the angle with x absis
+Theta is greater than 90 I can say Theta
+is less than 90 is less than I can say
+90 less than Theta less than 180 this
+Theta lies I can say and Theta is
+greater than 90 that's important and
+less than 180 so what happens is around
+Minima on one side the slope is here
+positive here you will get POS here on
+left hand side of Minima you will get
+negative slope isn't it on the other
+side of the slope is negative this side
+slope is negative this SL is negative
+this side is positive this is zero isn't
+it exactly at Minima the slope this is
+the Minima exactly at the Minima slope
+becomes zero which means slope changes
+isn't it slope changes its sign from
+positive to negative at Minima here it
+is positive here it is negative this is
+very important observation the other
+important observation is Imagine This is
+let let me
+say yes yes one side of slope is
+positive and other side is negative
+isn't it at a Minima slope is zero yes
+consider this imagine this is my plot
+this is my plot isn't it if you have a
+point here if you have a point here so
+you have a slope here let this slope is
+S1 S1 is slope let the slope and another
+Point here you have slope is S2 isn't it
+as you move closer to xar this is xar
+isn't it this is my point minimum Point
+as let this is X not is initial initial
+approximation as we move towards your
+xar what happens as you move closer to
+xar this is xar as you move closer to
+xar your slope reduces isn't it if you
+are coming from xn to xar this is my
+exter origin isn't it that's the minimum
+value if you are move if you are coming
+from from X KN to xar you if you are
+coming from this side the slope what
+happens the slope
+decreases
+slope decreases here you have high slope
+here it's low slope slope decreases
+isn't it here yes here what happens just
+see slope here what happened this is
+slope is negative isn't it slope how
+here is negative value because what is
+happening as you are going from one side
+to other side you are going from
+positive value to negative value if you
+are go going from this side to this side
+let me say like this it is simple and
+straightforward if I move from here to
+here what happens
+slope slope decreases slope decreases
+from here to here
+slope slope
+increases slope increases here is here
+it's decreasing slope this is slope is
+zero negative negative negative is it is
+isn't it yes using these simple
+observations in Geometry let's go and
+understand how does gradient descent
+Works how does your gradient descent
+algorithm works we will try to
+understand in my next lecture that is in
+lecture number 363 time being just
+understand if I move from X not to X1
+your slope what happens your slope
+decreases if I move from the here like
+this
+slope will increase isn't it just you
+can always understand this one anyway I
+will discuss in detail manner about this
+particular Concept in my next lecture
+just it's it's a matter of finding Ang
+tangents you know how to find slope
+isn't it just refer my previous lectures
+thank you very much
+
+my dear friends welcome to
+classes on applied data science with
+python this is lecture number 607 in
+this lecture I will continue my
+discussion on convolution layer in
+neural networks before understanding
+this lecture I request all of you to go
+through my previous lecture that is
+606 first you compute first you comp
+compute your convolutions isn't it then
+you then you apply your element wise
+relu isn't it there are two steps your
+step one is apply convolution and your
+step two is perform element device
+activation like reu this whole thing is
+often written as one step it is not
+often shown as two steps it is often
+shown as one step step often times
+people used to write it as one step this
+is my what is the just step one and step
+two how people are people often used to
+write in one step isn't it this is my
+input image this is my input which is of
+which is my n cross n Cross C let's
+assume I have M let's let's assume I
+have M K cross K Cross C kerners let's
+assume I'm doing sufficient padding let
+me say I have sufficient padding and
+stride s equal to 1 and let's assume my
+activation is what is my activation
+activation is re isn't it the final tens
+are I will get so what am I doing what
+am I doing first I perform my padding
+step number one perform padding then I
+perform m convolu tions in step two M
+convolutions using this stride this
+stride equal to one then that is that is
+step two step two is I'm doing first
+step is first I perform padding that is
+Step number one then I perform M
+convolutions why because I have M
+kernels K cross K Cross C kernels then I
+per in second step I perform my M
+convolutions using this Tri s equal to
+one then my third step what will I do
+then apply my re so first padding step
+number one first padding second what is
+second is conv convolution isn't it
+convolution with straight third is
+taking re and I get what is the what is
+the output of this one I will get n
+cross n cross M because I have M kernels
+here isn't it and the size is what is
+this size size is n cross n isn't this
+size I I have M kernel and this size n
+cross n need not always be same I have n
+cross n in input as well as I have n
+cross in output these need not be same
+isn't it just see here what is my input
+size n CR n Cross C here n CR n CR n
+this n cross n in input image as well as
+in output image this n cross n this n
+cross n these two need not always be
+same because if I change my padding what
+happens if I change my padding or if I
+change tries isn't it if I change my
+padding or if I change my strides or if
+I change my kernel size this n cross n
+will change to this particular n cross n
+will change to some other value this n
+cross n will change to some other value
+when will it change if I change if I
+change my padding if I change my stride
+if I change my kernel this n cross n
+will change to some other value this is
+one layer is called a convolutional
+layer so convolutional layer literally
+has two operations what are those two
+operation convolution with multiple
+kernel followed by re and what is
+convolution convolution exactly like dot
+product that the relation convolution is
+just like dot product isn't it that's
+the relation between multi-layer
+perceptron and con that we learned in
+our previous lecture itself isn't it
+very very interesting now let me show
+you a very uh let me show you a very
+very interesting example this is a very
+simple this is very simple conet just
+see this I want to show you an example
+how conet work isn't it I suppose this
+is an input image Let Me Assume this is
+this is simple coret this is and this
+suppose this is an input image actually
+this is a very very nice tutorial at
+Stanford isn't it it is from Stanford I
+will provide a reference Link in the
+description section this is one diagram
+I wanted you to explain I this is very
+very high level explanation I will show
+you why multiple levels of convolution
+is important isn't it why multiple
+levels of convolution is important so
+what happens in practice is people
+actually train people actually train
+multiple multiple layers of convolutions
+multiple levels of convolution this is
+my input image let me say this is my
+input image they perform one level of
+convolution followed by reu isn't it
+conv one level of convolution followed
+by re I get one more tensor this is my
+input what is my I have input image here
+just see this is my input isn't it this
+is my input I get a tensor what is the
+output I'm getting a t I'm getting a
+tensor again I apply
+convolution followed by Rel I get one
+more tensor isn't it so on so forth
+there is also an operation called there
+is also an operation called pool what is
+pool we will try to understand I will
+explain you what is the pool operation
+is in the next videos but otherwise just
+see that architecture this is very rough
+example given an object what you have to
+do given an object just say this one
+given an object suppose I have multiple
+classes that I wanted to determine
+whether it is a car isn't it whether it
+is a car truck airplane ship or horse so
+this is like multiclass classification
+isn't it so what I have here last layer
+what is this last layer last layer it is
+a fully connected layer with sigmoid
+activation or with soft soft Max activ
+to put it more uh simply isn't it so the
+typical architecture I will show you
+this is a typical architecture I will
+show you more real word architecture but
+this is only for understanding isn't it
+first apply convolution first apply
+convolution followed by re this is be
+this becomes just see here what's
+happening just I'm applying here I'm
+applying convolution followed by re
+isn't it this becomes one convolutional
+layer just see this becomes one
+convolutional layer just see again what
+I'm doing convolution and reu this is
+another layer isn't it again after that
+pooling again convolution re again this
+is first one this convolution re it is
+layer one just see this is layer one
+again convolutional re that is layer to
+just try to understand this just see
+this one convolution
+and reu layer one convolution and reu
+it's a layer two again after that what
+am I performing here pooling anyway I
+will discuss about pooling in next
+videos this is layer three why because
+it's convolutional and re here also I
+have convolution reu again I have
+pooling here convolution re convolution
+re pooling isn't it what is this this is
+again FC basically means just see what
+is my FC FC means what fully connected
+isn't it fully connected layer at the
+end I will show you a real world example
+this is how a real coinet actually looks
+like isn't it a real colets actually
+this is how a real colet convolutional
+neural network actually looks like it
+has multiple layers of convolution with
+an operation called pooling that isn't
+it it has multiple layers of convolution
+with an operation called pulling that's
+the that we will see in one of the next
+uh uh videos but you might wonder why
+why do we care about it this is a very
+very nice presentation provided by
+people actually uh invented like uh this
+is just Why liun why isn't it and others
+terrifying team of uh Team of
+researchers typically called go he's
+this why leun is typically called Goda
+Godfather of modern deep learning the
+actually invented the whole uh CNN isn't
+it so this is this is a nice
+presentation in 201 uh in 2015 this is a
+nice presentation just see this is nice
+presentation in in 2015 and this is a PP
+I will provide you a reference Link in
+description section their observation
+this just like their observation is just
+like the brain isn't it just like just
+like the brain
+brain observation was this what their
+observation was this just like like the
+brain remember what is the brain bra
+what is the brain doing I have the raw
+image let me say I have the raw image
+isn't it this is my raw image uh that
+that my eyes see isn't it V1 was
+detecting Let Me Assume V1 was detecting
+edges it was detecting shapes and
+motions things like that so on so forth
+in the last layer in the last layer let
+be in the last layer what happens in the
+last layer somewhere here I actually do
+object recognition so what they realized
+is when they build when they build
+hierarch hierarchical system like this
+let me say we are building hierarchical
+system like this the output here is
+related to V1 the you have input image
+and you are getting tensor this output
+image that output is related to V1
+activation and another output is related
+to V2 activation in the human visual
+CTIC so what they what they realized is
+very interesting given this image my
+first level I have all my kernel isn't
+it I can visualize my kerners isn't it I
+given what's happening I given this
+image let me say I have a COR image my
+first level I have all my kerners I can
+visualize my kerners isn't it it when we
+visualize the visualize the kernels that
+we learn at the end of the training just
+see this kernel it is literally doing
+Edge detection what what's doing here
+it's doing Edge detection this is edge
+here it is detecting one Edge just
+observe here it is detecting some Edge
+like this this is even it is detecting
+like horizontal Edge isn't it this this
+is detecting angular Edge this this may
+be the angular Edge this is detecting
+angular Edge detection this is also Edge
+detection this is looking for two edges
+just see here I have two edges like this
+isn't it you have multiple edges also is
+isn't it two Edge detection in the
+initial layers of my neural network in
+my CNN if I visualize my kernels they
+look like Edge detectors that's
+important isn't it in initial in
+initial in my CN if I visualize my
+kernels they look like Ed detectors
+isn't it the but when I go to the that
+is in initial lay but but when I go to
+the higher levels it start detecting
+Parts isn't it just say this is It's
+detecting like Tire just just see this
+is car tire just observe this one here I
+have car tire it is detecting objects
+it's a tire it's look at this uh this
+this is Tire here isn't it this is
+probably just the body part here it is
+something like in next layers what is
+it's detecting here it's a body part it
+is just like detecting B so what's
+happening is so when you train a
+convolutional neural network which is
+hierarchical just like in the brain are
+very similar to the way uh the brain is
+working mathematics of the brain is far
+more complex because we have been
+inspired by brain what people realized
+is one should train a convolutional
+neural network which is deep when when
+you train a deep convolutional neural
+network with multiple layers of
+convolution the starting layer the
+starting layer what happens the starting
+layers learn Edge detectors but the more
+complex layers learn Parts isn't it more
+complex layers learn Parts even more
+complex layer learn parts are even more
+complex layer it looks like just see
+layers learn Parts isn't it flower
+complex layers May detect things like
+flower this is look like faces it will
+detect flowers and faces so more complex
+layers are learning more complex
+obstructions of the images so initially
+there are just observe this one image
+recognition initial initially they are
+pixes then it does edges then it does uh
+text on then it does does does motif
+part and finally object itself so if we
+train deep multi-layer con convolutional
+neural network whenever we say cornetes
+what it means it means actually it means
+actually deep shallow conet are very
+rare now very rare nowadays so so if you
+can train deep multi-layer convolutional
+neural network it behaves very similar
+in its out outut to the visual cortex
+isn't it how the visual cortex is
+working the visual cortex isn't it V1 V2
+it's working like hierarchical manner
+isn't it just try to recall the recorded
+lecture and visual CeX this this could
+be my input tensor isn't it I I can have
+one level of convolution with some
+parameters on it convolution followed by
+Ru activation I get one more tensor here
+I can apply convolution on top of of it
+again I will get a different tensor
+isn't it I can keep getting tensors here
+eventually what will happen is I will
+show I will show you some example
+eventually this tensor will get small
+enough and we will perform an operation
+called flatten isn't it we will perform
+an operation called flatten I will
+explain you flatten operation when we
+see actual real world neural network
+called linet we will discuss this
+particular linet this the the stacking
+of one layer on top of the other layers
+is is critical for whole of the
+convolutional neural network I request
+all of you to go through this lecture if
+you have any difficulty please keep a
+comment thank you very much
+
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number 610 in
+this lecture we will try to understand
+Max pooling in lecture number
+607 we discussed about pool just try to
+recall we saw something called as
+pooling layer let's understand what is
+the pool means this pool is called pool
+pooling actually let let let me explain
+what is pooling we will try to
+understand what is pooling pooling is a
+layer that we can add isn't it before we
+saw how it works let's understand what
+is the inspiration what is the in
+inspiration for this what is the in
+inspiration for pooling the concept is
+imagine I have my image here my raw
+image here I apply a kernel on top of it
+what is my kernel K cross K Cross C so
+let's assume this is my Matrix size is
+my kernel size is K cross K Cross C then
+my Matrix size is n cross n Cross C I
+get an image isn't it I'm getting this
+particular image I have I have image
+image whose size is whose size is n
+cross n cross and I have a kernel whose
+size is K cross K Cross C now I have I
+have I get an image I have not yet
+applied anything let's assume I do
+enough padding and stride s = to 1 here
+here let's assume let's assume I have
+got what is this output size what let me
+assume this image size is this output
+size is assume I have got n cross in
+cross image isn't it let's assume this
+this is detecting some vertical edges
+yes let me assume this is detecting some
+vertical edges let's assume I have got
+an image like this I'm just writing it
+down let's assume I have got one here
+yes uh which means an edge present here
+let's assume I have got zero here I have
+got one here let's assume I have got
+zero here so some one here some zero
+here isn't it
+so actually let assume I'm having these
+values isn't it so what happens is what
+what this is what is what it says let's
+assume this kernel this kernel let's
+assume this kernel detects vertical
+edges isn't it remember it is hard Cod
+kernel what type of Kernel it is it is
+hard Cod kernel it is a learned kernel
+it's already learned kernel isn't it
+let's assume that that learned kernel
+what is the functionality of this learn
+learned kernel this learned kernal
+detects vertical edges isn't it
+now now one of the one of the things we
+wanted to do is we want our model our
+models to be something called location
+invariant isn't it our model we want our
+model to be location invariant what is
+the location invariant means suppose
+let's assume we are trying to detect
+let's assume we are trying to detect an
+object let's assume in this particular
+image I'm trying to detect an object in
+in in this image in this raw image
+otherwise the object is here I can say
+the object here is face isn't it face
+whether the face is here or the face is
+here I would like to detect I would like
+like to I would like my convolutional
+neural network to detect the face the
+face it need not bother whether face is
+here whether face is here your
+convolutional neural networks must
+detect isn't it that is known as I would
+like to I would like my convolution
+network to detect whether the face
+whether the whether the face is wherever
+the face is actually your face is here
+wherever the face is wherever the face
+means what
+whether face is here face is here your
+convolution neural network must be able
+to detect I would like my convolutional
+NE neural network to detect there is a
+face here or here whether the face is
+here or here your convolution neural
+network must detect it doesn't matter
+that is called it doesn't matter
+wherever where where it is your conv
+your C CNN must be able to detect isn't
+it is called is called location
+invariance this concept
+this concept that wherever the face is
+we should be able to detect isn't it
+wherever what is the location invariant
+wherever the face wherever the object in
+this image we should be able to detect
+your convolutional neural network must
+be able to detect this is called
+locational invariance there is also
+something called as there is also uh
+something called as scale invariance
+isn't it which means whether the face is
+small just see which means scale invari
+means what whether the space whether the
+face is small something like this
+whether SP is Big isn't it LO scale
+invariance which means whether the face
+is small or the face is large I would
+like to detect it your CNN must be able
+to detect it there is something called
+rotational invariance isn't it what is
+which means what's the meaning of
+rotational invariance whether the face
+is like this whether the face is like
+this or or face is tilted like this
+isn't it face is tilted like this I
+wanted to be able to detect this so
+pooling is a concept that makes your
+model slightly invariant invariant to
+all these Transformations means location
+scaling and uh rotation isn't it the way
+it does is I I will explain you how it
+how how it does and the way it does is
+very interesting so it's try to make the
+inspiration it comes from biology in
+biology we have some neurons isn't it in
+biology we have some neurons especially
+at the higher levels not in V1 not in V2
+but in higher levels like V7 where where
+wherever wherever the face in the input
+image isn't it wherever the face in the
+input image face could be uh face could
+be here face could be here isn't it face
+could be rotated isn't it like this face
+could be rotated pH could be scaled
+still this neuron in V7 fires isn't it
+still the neuron in V7 fights so there
+is so there is a single neuron or small
+set of neurons that are firing as soon
+as see a face wherever the face is is
+however the face is however the face is
+smaller or larger okay that's what
+that's what it happening in biology so
+people said can we can we somehow
+replicate that which is happening in
+biology can we rep replicate in
+mathematics or can we replicate in CNN
+that is the inspiration for pooling and
+the way pulling works is very simple so
+imagine if you have if you have image
+like this very very simple concept let's
+assume I have 4x4 4x4 image like this
+with values let's assume this is 4x4
+Matrix isn't it 4x4 image on top of it
+what are the values in this image let me
+assume I have values 1 2 4 5 6 7 8 3 2 1
+0 1 2 3 4 isn't it let's assume this is
+4 4x4 image on top of it let's assume we
+we want to per form we want to perform
+Max pooling with kernel or filter size
+equal to two with stride equal two I
+want my Max pooling with kernel size two
+Max pooling is also Max pooling is also
+like kernel isn't isn't it you can you
+can think of Max pooling as doing some
+sort of kernels you you can think of it
+you can think of it as a kernel you have
+a kernel you have a kernel of size two
+isn't it you have a kernel of size two
+the max pooling kernel what it does is
+it says I take this 2x2 filter just see
+this 2x2 filter and I find the maximum
+value what is the maximum value here 1 1
+56 what is the 2x2 filter 1 1 56 which
+is the maximum value 6 the resultant
+here is the resultant here is 2 cross2
+Matrix because my Max pooling interal
+Max pooling filter or Max pooling
+operator as size of two so I will take 2
+cross two Matrix you take the maximum
+value of all of them so I will put what
+will I put I will put six here why
+because 6 is maximum of 1 56 is isn't it
+now now I said my stride equal to two so
+this is done so my stride equal to I
+want to go um stride equal Max of6 is 6
+isn't it as my stride equal to again
+which one will I take 2 4678 what is the
+maximum value of 2 4678 that is 8 isn't
+it I jumped by two units as stde equal
+to at s equal to I jumped by 2 units
+isn't it yes for the what is the maximum
+value here maximum value for second 2 47
+8 is 8 next 2x2 matrix which one is next
+2x2 matrix 3 2 1 2 which what is the
+maximum value here 3 212 maximum value
+is three what just I'm keeping in
+resultant Matrix isn't it what is the
+maximum value here 1 3 4 4 is the
+maximum value isn't it and this is how
+the max pulling layer works with a
+defined kernel size and very simple
+stride now what happens Max pooling with
+kernel size equal to 2 kernel size equal
+to and stride equal to 1 Let Me Assume
+like this that then I I get 3x3 Matrix
+isn't it where where what what is the
+maximum here maximum value of 1 1 56 is
+6 again 1 26 7 is 7 isn't it because my
+stride equal one just see but 2 4 78
+maximum value is 8 in similar manner in
+similar manner I can fill all the values
+then what is the resultant Matrix is 678
+678 334 so max pooling basically says
+take the kernel but you are not
+multiplying the kernel with anything
+remember you are not multiplying the
+kernel with anything you are just saying
+you are simply saying whatever the
+maximum value put it in resultant Matrix
+it it it you might you might you might
+wonder how does Max pooling creates
+invariance for you isn't it the concept
+is this let's take let's take a 4x4
+Matrix here so how does Max pooling
+creates invariance let's assume I choose
+let me say I choose my kernel size equal
+to 2 and S equal to what is my s s means
+what s means stride equal to stride
+equal to 2 so what did we do the first
+step I took this which one I I I took
+this one first four cells isn't it
+output from previous this is output from
+previous stage if this is an EDG
+detector I'm assuming
+this is an edge detector if there is an
+edge here isn't it if what if there is
+an edge here you have high value here
+because because we said we said white is
+high value dark is low value or or vice
+versa isn't it so if you have if you
+have if you have an edge here let's
+assume we we get a value here so whether
+the edge is whether the edge is whether
+whether the EDG is in this pixel whether
+the EDG is in this pixel whether the EDG
+is in this pixel whether the edge is in
+this pixel isn't it we are taking
+maximum value among all four of them now
+this value becomes as maximum value six
+this value become six will be higher
+whether the edge is present whether the
+edge is present in this pixel in this
+pixel in this pixel your maximum value
+what is your maximum value is six isn't
+it that's that's what it says similarly
+similarly let me consider another one
+just see this one four similarly if you
+take this value what is this value I'm
+considering I'm considering this value
+four isn't it this value is high The
+Edge would be present The Edge would be
+present in this pixel in this pixel in
+this pixel isn't it in any Edge would
+present in any of these four pixels if
+you have an edge this will fire up which
+one will fire up this four will be fire
+up so it is higher value isn't it so max
+pooling is saying whether you have
+whether you have edge here
+here whether the whether you have edge
+here or here here isn't it I can do you
+your maximum value I will keep here
+isn't it maximum value will be F I can
+do one more level of Max pooling let me
+say I can do one more level of Max
+pooling on top of it if I do one more 2
+cross two pooling on top of it with k
+equal to what do I get one value what is
+that one value 8 that is 1 cross 1 so if
+there is an edge if there is an edge
+anywhere in this
+4x4 doing two levels of Max pooling but
+by just doing two levels of Max pooling
+whether the edge is anywhere in the 16
+pixels that's important whether the edge
+is anywhere in the 16 pixels that's
+important whether the edges anywhere in
+this 16 pixels this value8 this value8
+will always be high this value will be
+high if there is an edge in any of the
+16 pixels by extension of by extension
+if there is a phase in any of these
+regions in any any of these regions of
+the image this value eight will be
+higher isn't it it is actually creating
+location invariance your max pooling is
+a sort of location invariance because
+whether your face is here whether your
+face is here here here isn't it whether
+face is wherever it may be it will still
+detect the face because it is taking
+maximum activation of Max maximum
+activation of each of these values isn't
+it what is this eight eight is maximum
+value of all these 16 values that that
+that point is important isn't it Max
+pooling is very very popular method in
+modern Coates there are also some old
+Coates where people used where people
+used average or mean pooling isn't it
+average or mean pooling where in instead
+instead of like Max in kernes it's it's
+average or me mean pooling there is a
+there is actually I can say which one is
+most popular this one is most popular
+approach which one is the most popular
+approach Max pooling is the most the
+most popular approach isn't it we
+can actually you can say Max pooling
+what is the use of Max pooling today the
+most popular approach is Max pooling Max
+pooling is something like everybody
+using left and right very very simple
+concept which which which which
+introduced invariance to the system
+isn't it that's important yes yes if if
+You observe carefully what are the what
+are the important Concepts now we have
+all all the components for conet we have
+operations of
+convolutions we have operations like
+what are the components you have
+components like convolutions relus and
+Max pooling isn't it these are the these
+are I can say the these are the most
+used components in any modern
+convolutional neural networks I request
+all of you to go through this lecture if
+you have any difficulty please keep a
+comment thank you very much
+
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number 604 in
+this lecture I will continue my
+discussion on
+convolution on color or RGB images
+before understanding this lecture please
+try to recall my previous lecture that
+is lecture number
+603 what we discussed what we learned
+convolution on 2D Matrix isn't it what
+about convolution on 3D tensor how does
+that work the same concept the same
+concept in the sense component wise
+multiplication followed by addition just
+like uh it is just like a DOT product
+isn't it same same component wise
+multiplication and addition but the
+struct structure is slightly different
+imagine if I have imagine if I have 3D
+tensor like this 3D tensors are often
+represented as volumes isn't it 3D
+tensors are often represented as volumes
+because you have length just see l means
+what length you have width you have
+depth isn't it depth is same as channels
+depth or channels
+let's assume let's assume this is image
+isn't it this image which size what is
+the image of this size n cross n Cross C
+this input image size Let Me Assume n
+cross n Cross C Suppose there are three
+channels in RGB image what is your cc is
+number of channel = to 3 suppose if I
+apply convolution that is star star is
+convolution operator this is my
+convolution operator what should my
+kernel look like my kernel also becomes
+what is my kernel kernel also become 3x3
+3x3 kernel or three dimensional tensor
+when we s just see here your input image
+is three dimensional why because it's
+color image isn't it three dimensional
+three dimensional or tensor your kernel
+is also three dimensional isn't it I can
+say it's a tensor
+just try to recall what is when when
+when we saw earlier
+cases what what we discussed all of the
+kernels are matrices just see kernel is
+a matrix since we had a twood
+dimensional Matrix as input that is
+important we had a 2d kernel isn't it if
+you have 3D tensor in this particular
+case if you have 3D tensor we have a 3D
+tensor here our kernel our kernel also
+becomes 3D tensor that's important isn't
+it but the most important thing is let's
+say kernel is of size K cross K isn't it
+the number of channels here should be
+same as here means actually here a small
+mistake your input image size is not K
+cross K this is n cross n Let Me Assume
+this is n cross n Cross C here this
+number of channels number of channels in
+what is your what it says your number of
+channels number of channels are same
+that is important isn't it just see here
+what is C here just this one this C and
+this C isn't it your input image size is
+what is input image size n cross n Cross
+C what is your kernel size K cross K
+Cross C here this C and this C should be
+same that's what it says number of
+channels are same number of channels C
+this C and this C should be same isn't
+it if if they are not same what happens
+if they are not same if if if they
+otherwise if they are not same it will
+become complex isn't it when you do this
+operation what do you get eventually you
+will get some formula like this what is
+the formula what is output here what
+will you get here N - k + 1 into n - k +
+1 into 1 isn't it like we we just try to
+recall we already discussed this formula
+in previous lectures you will get n
+minus k + 1 into n- k + 1 into 1 you
+will get a one channel output isn't it
+what will you get you will get one
+channel output earlier we are moving
+kernel just try to recall this is n one
+channel output n- k + 1 into n- k + 1 in
+into 1 isn't it earlier we are moving
+kernel just say earlier we are moving
+kernel Matrix on top of the input Matrix
+now instead of matrices think of them as
+volumes now we are moving volumes think
+of them as cubes and cuboids I can say
+it's a cubes or cuboids we have cuboid
+here where we move this cuboid just see
+we move this cuboid you K cross K you
+are moving you are moving your cuboid
+just see I'm moving this particular
+cuboid I'm keeping here just see I'm
+keeping this cuboid here on input image
+that's important is isn't it you move
+this cuboid your kernel cuboid will be
+moved on input image cuboid you take you
+take cuboid and you take this cuboid
+which cuboid
+this cuboid and place here isn't it
+that's what it says your kernel cubid
+must be placed on input image cubid
+isn't it you do after placing what you
+do you do same same concept do
+elementwise or component wise
+multiplication and followed by addition
+you will get an output your first output
+is generated by placing 3D tensar kernel
+exactly on top of this input image input
+is image is also threedimensional for it
+to work isn't it just what what you
+doing here for it to work EX for it to
+work exactly this channel depth should
+exactly match with just see after what
+what am I doing here I'm keeping your
+kernel on your input image your kernel
+cubid you're keeping on on input image
+you'll get value I'm keeping that value
+here this is my first value yes this is
+my first value isn't it in similar
+manner just see for it to exactly work
+this channel depth channel has got some
+depth just see this channel depth must
+be equal to Kernel depth just see this
+channel depth what is my channel depth
+this is my channel depth this must match
+with which this this this must means
+your kernel depth must match with must
+match with the depth of the input image
+the these must be same is it isn't it
+that's what it says for it for it to
+exactly work chnal depth should exactly
+match with kernel depth here kernel
+depth must match with this depth they
+must be of same size isn't it for it to
+exist for it to exactly work this chal
+depth should exactly match with kernel
+depth isn't it if these two things don't
+match if these two things don't match
+what happens if these two things don't
+match you can't exactly Place one on top
+of the other isn't it so that's why
+that's why this C which see this this uh
+input image size n cross n Cross C and
+this is K cross K Cross C this C should
+match with this C otherwise you cannot
+place isn't it so why the these two C's
+must should should always same should
+always same in
+convolution at least as far as image
+processing as far as deep learning is
+concerned there are some other signal
+processing operations and they they need
+not be have the same value in the
+context of signal processing for our use
+case this depth should same as these two
+depths must be same this depth must be
+matched with this depth isn't isn't it
+so whenever I place this are whenever I
+place distance are here I'm I'm placing
+distance are here isn't whenever I place
+distance or or this volume this volume
+here isn't it or cubid this cuboid on
+this cuboid isn't it I will get one
+value isn't it that value I'm keeping
+here this is first value I'm keeping
+here I move this cuboid what what will I
+do now I will move this cubid here now I
+will move just here and I again I will
+get some value that value I will keep
+this is second value is isn't it that's
+I move this cubid again again so let's
+assume I take this cubid just I'm moving
+I will I will move this cubid now isn't
+it just I can move I can move this cubid
+now like this just I'm placing this
+cubid cubid here isn't it again again I
+will do after moving cuid again what
+will I do I will do component wise
+multiplication and addition what will I
+get I will get next value just see yes
+this is n cross n Cross C this is K
+cross K Cross C depth should be same
+isn't it this depth must match again I'm
+moving then what will I get I will get
+second value so even though I am doing
+convolution of convolution of
+convolution of 3D tensor and 3D tensor
+just have convolution between two 3D
+tensor my output is 2D Matrix isn't it
+my output is 2D Matrix so convolution
+operator on a color image which is a 3D
+tensor with a 3D kernel generates 2D
+image this is how we perform convolution
+on color images to be specific RGB be
+images very very simple concept instead
+of instead of thinking like rectangles
+isn't it in previous case in previous
+lectures we were thinking about instead
+of thinking like rectangles rectangles
+and squares in this case in in this case
+we think everything as here you thinking
+about rectangles but in three
+dimensional in this case we think
+everything as cubes and cubides again
+just see formulas same formulas that we
+learned just try to recall these are the
+formulas which which we learned in
+previous lectures this will work except
+the channel just see here if if if input
+of C if input of C channels this has to
+be C in case one if this is C and case
+two and this has to be C isn't it if
+this is C then this has to be C isn't it
+isn't it except except if this has
+except that except the channels except
+that everything works out exactly the
+same way isn't it this is how we perform
+convolution on RGB images specifically
+color images I request to all of you to
+go through this lecture if you have any
+difficulty please keep a comment thank
+you very much
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number
+605 in this lecture we will try to
+understand convolutional layer in neural
+networks we understand these three
+operations convolution padding and
+Straits given that we understand these
+three concepts now we can Define how a
+convolutional layer in neural networks
+remember how does a multi-layer
+perceptron look like how does one layer
+in multi-layer perceptron looks like we
+have layer of neurons literally isn't it
+if You observe a layer in multi-layer
+perceptron you can see layer of neurons
+you get input puts from the previous
+layer isn't it let's let's assume let's
+assume this is Layer Two what is layer
+two layer two is this one is layer of
+neurons isn't it this is layer of
+neurons yes yes this is Layer Two it it
+it could be it could be it I'm just I'm
+specifying layer too it could be any
+layer you get inputs from the output of
+previous layer isn't it just see this is
+this is my previous layer this is my
+previous layer previous layer I'm
+getting inputs to Layer Two the the
+these inputs are the outputs of previous
+lay that's what I'm saying isn't it
+let's assume there are bunch of outputs
+let's assume there are bunch of outputs
+from the previous layer again remember
+this could be let me say this could be
+this layer I'm specifying specifying
+about this particular layer this could
+be an input layer or it could be
+previous layer isn't it given this layer
+given this layer in the sense now given
+this layer Layer Two we are doing fully
+connected layers here isn't it just see
+FC means what FC means fully connected
+and then apply an operation on top of it
+we output this isn't it just what is
+this before we do it two step we have
+two steps what is my first step my first
+step is given all these inputs let's
+call the input as x what is my x x is my
+input whatever the input whether it is
+raw input or it's an input from previous
+stage we have bunch of Weights C
+corresonding to each neuron we are
+Computing we are Computing W transpose X
+as J isn't it what is my j z equal to W
+transpose x j is defined as W transpose
+X and then we compute what will we do we
+compute activation units like reu on top
+of J means you are applying re
+activation function on J this Bec comes
+the output what is my output my output
+is y y equal to reu On On Top Of Z let
+me call this as y so for any neuron the
+inputs from the previous layer are
+called X the weights are called the
+weights are called W J is basically J is
+basically the component wise
+multiplication followed by addition this
+is nothing nothing but what is this this
+is dot product what is this
+w.x which is nothing but component wise
+multiplication followed by addition so
+you compute J and then apply reu on top
+of it then it becomes Y what what is my
+y y = to reu on Zed this become input to
+the next layer what is my y y is nothing
+but reu on J this Y is input to the next
+layer next layer in the sense what is
+next layer now you may have I can say
+this is layer three next layer in s yes
+your Y is input to the layer three this
+is how your multi-layer percept drawn
+looks like let's understand how a
+convolutional layer looks like so one of
+the key key things just see one of the
+key things let's not forget this one of
+the most important things why are we
+designing the convolutional layer that's
+important why are we designing the
+convolutional layer we are designing
+convolutional layer because we are
+biologically inspired by the
+architecture present in Maman brains
+like V1 vs2 V3 so on extra based on the
+biological inspir biological inspiration
+from visual cortex of cats monkeys and
+humans this is a core idea how a
+convolutional layer looks like so we
+know that within V1 that's a primary
+cortex isn't it we know that within V1
+that is primary cortex that is primary
+cortex means visual visual
+cortex there are multiple there are
+multiple Edge detectors in the human
+brain and we know that one Edge detector
+corresponding to one kernel which means
+if you have if you want multiple Edge
+detectors create multiple kernels isn't
+it you need multiple kernels or you need
+multiple kernels or multiple filters I
+can say kernels or filters some people
+call them as filters let's call them as
+kernels for Simplicity now the fun part
+is this how should be these Edge
+detectors are kernels B so in
+convolutional neural network remember in
+the classical image processing people
+come up with specialized kernels isn't
+it we saw the so kernel isn't it many
+many other types of Kernel CNN will say
+let's let's learn the kernel Matrix
+using uh let's learn the kernel Matrix
+using back back propagation let let's
+just learn it so so the way it looks is
+in your classical multi-layer perceptron
+in your classical multi-layer perceptron
+your unknowns are W isn't it in your
+multi-layer perceptron in your
+multi-layer perceptron you learn your
+weight
+you learn your W's given you you will
+learn your weights you will learn your
+weights given inputs and outputs isn't
+it in CNN in the context of CNN CNN
+kernel in the context of CNN you you
+learn your kernels you learn your
+kernels yes in CNN you learn kernel
+matrices this is important in the
+context of CNN what what's happening you
+learn your kernel matrices because they
+both are which are similar in the
+context of CNN we learn kernel matrices
+isn't it they both are very similar both
+are very similar means weights and
+kernels are similar your weights in your
+weights in multi-layer perceptron your
+weights in multi-layer perceptron or
+classical multiplayer perceptron are
+similar to Kernel m es in convolutional
+neural networks remember in your
+multi-layer percept R what are you doing
+taking a DOT product between weights and
+your input Vector that's important isn't
+it in multi-layer procept what you are
+taking taking dot product between
+weights and your input Vector that is W
+transpose X just try to recall what we
+discussed in MLP lectures in convolution
+what are you doing we are taking the
+input image taking the input image and
+convolving the kernels isn't it taking
+the input image and convolving the
+kernels kernels can be thought of weight
+weight matrices isn't it what are the
+kernels you can treat kernels as weight
+matrices and we will learn these kernel
+matrices so kernel matrices is exactly
+do the same thing that weights do that's
+important kernal matrices do exactly
+same thing that W do there are some
+differences that we will come that we
+will understand so so the way we design
+one layer in convolutional neural
+network is is is like this isn't it
+let's assume I have an input image here
+let me assume I have an input image here
+a color image let's say which is of size
+n cross n Cross C see means channels we
+already discussed this is isn't it I
+have one kernel here let me say which is
+let's say k cross K Cross C when when I
+convol these two just let me apply
+convolution operator in between these
+two I get one image which is of size N -
+k + 1 into N - k + 1 if I don't to if I
+don't do padding and all of that this is
+simple convolution now instead of one
+kernel let's call this is Kernel K1
+isn't it instead of one kernel if I have
+two kernels isn't it what happens this
+will take this input let's call this K2
+K1 is first kernel K2 is second kernel
+this kernel will result this kernel will
+result in other image which is of size
+let me say second kernel is generating
+an image of size n minus K +1 into n - K
++1 size if I have three kernels this is
+first kernel for first kernel I getting
+an image of n- k + 1 into n- k + 1 for
+second kernel I'm getting another image
+of size n- k + 1 into n k + 1 if I have
+three kernels I get three images here
+which of of which is of size N - k + 1
+into N - k + 1 probably this kernel K1
+what is the fun K K1 is doing here
+horizontal Edge detection probably
+kernel K2 is doing kernel K2 means
+second kernel is useful for for vertical
+Edge detectors is isn't it to detect um
+there may be another kernel which may
+detect edges with 45° so different
+kernels so different kernels could
+different K kernels could learn
+different weight matrices instead of
+instead of hard coding them as soel
+kernel or anything let's learn the
+kernel weights from the data given our
+original data set capital d = to x a
+comma y based on the problem that we
+have to solve let's let's learn kernel
+weights kernel matrices just the way we
+learned in multi-layer perceptron we
+just with the way we learned weights in
+multi-layer perceptron just I I will
+repeat we have to what you have to do we
+learn the kernel weights learn the
+kernel matrices just learn the kernel
+matrices just the way we
+learned just the way we learned weights
+in the multi-layer percep Ron in the
+context of multi-layer perceptron we
+learn fites in the context of con
+convolutional neural networks we learn
+kernel matrices isn't it that that is
+the important isn't it that is the
+important connection that's the
+important connection kernels kernels
+exactly works like weights in
+multi-layer perceptron that's important
+isn't it except that you could have
+multiple kernel isn't it you may you may
+so imagine if I have Matrix if I have M
+if I Matrix here n cross n Cross C
+Matrix here if I have an input which of
+of size n cross n Cross C let's ass
+I have one more uh third kernel third
+kernel means K3 isn't it which is again
+size K cross K Cross C let's call this
+kernel as K3 this is also results a
+third image isn't it now I can now I can
+stack now I can now I can stack all of
+these images just see now What's
+Happening Here K1 is Kernel one I'm
+applying on N cross n Cross C image I'm
+getting n- k + 1 into n- k + 1 C size
+image
+n- k + 1 into n- k + 1 size image that
+is image 1 just see here I'm here I'm
+getting image 1 by using kernel K1 here
+I'm getting image 2 by using kernel K2
+here I'm getting image 3 by using kernel
+K3 this kernel may be something like
+soel horizontal Edge detector this may
+be soel something like soal vertical
+Edge detector this kernel may be a a
+kernel which which detects an edge with
+45° just just I request all of you to go
+through this lecture if you have any
+difficulty please please and please
+please go through this lecture once or
+twice why because this this lecture is
+very important one thing you have to
+understand here in the context of
+multi-layer perceptron we used to learn
+weights in the context of convolutional
+neural networks we used to learn kernel
+matrices thank you very much
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number
+61 in this lecture we will try to
+understand CNN training
+optimization so now the big question
+here is how does optimization part of
+convolutional neural network works
+remember
+when we learned multi-layer perceptrons
+we learned that we can apply back
+propagation and all of the SGD variants
+all of the SGD variants that will Le so
+simple uh simple SGD adagrad Adam and
+all of these algorithms we can apply as
+long as all of our activations are
+differentiable look at at the end of the
+day we have X and we have y and we have
+some parameters what are the parameters
+here weights are the parameters isn't it
+as long as we can compute the derivative
+of loss function with respect to weight
+as long as I compute this derivative
+which derivative derivative of L with
+respect to W given this we know we have
+X we have y I have L function L what is
+my L function L of Y comma y cap isn't
+it and I have L function on top of it l
+function what is L function it's a
+function of Y comma y cap isn't it given
+x x is input W is a parameters Y is
+output and uh your X is input Y is
+actual actual output we know all this
+why y cap is the output which we have
+got isn't it you need not bother about
+this particular equation we discussed
+many times this one this is course core
+structure this is the this is the basics
+that we should not uh miss out if you
+have any difficulty please refer my
+previous lectures when whenever whenever
+you are designing a new architecture
+like convolutional neural networks
+remember CNN is very different
+architecture to multi-layer perceptrons
+but the core of the back propagation is
+if if you have X
+whatever if you have X whatever whatever
+you do in between I don't care it has
+some parameters W uh I get y capap I
+have loss function as long as I can
+calculate the partial derivative of L
+with respect to W or I can say partial
+derivative partial derivative of L with
+respect to W or w i w i means weights to
+be to be precise w means what weights
+Cal calculate the gr grad of L what you
+have to calculate Del of L calculate the
+grad of L with respect to W as long as I
+can calculate my partial derivatives I
+can apply back propagation the big
+question here is in CNN we have in CNN
+just see what what is as long as I can
+calculate my partial derivatives I can
+always apply back propagation isn't it
+in CNN we have convolutional layer just
+observe in CNN just try to recall our
+previous lectures in CNN we have
+convolutional layer that we discussed
+and we have Max pooling layer isn't it
+we have to be we have to be sure that
+both these layers are differentiable
+which means I'm able to compute what is
+the meaning of this I'm able to compute
+the derivative isn't it first let's look
+at convolutional layer isn't it first
+let's try to understand convolutional
+layer what does convolutional layer here
+it has the convolutional operator
+followed by an activation units like
+relu we know that we already discussed
+about reu we know that relu is
+differentiable isn't it what is we know
+that relu is differentiable what about
+convolution operator what is the
+convolution convolution is basically
+elementwise
+multiplication followed by addition this
+is exactly like you this is exactly like
+your dot product it is just like dot
+product element wise multiplication and
+addition and and and your convolution
+convolution of course in in convolution
+your using matrices what you are using
+in convolution you are using matrices
+isn't it in the case of this this is
+element wise multiplication and addition
+that is like your dot product where we
+use generally dot product is in between
+vectors the derivative and everything is
+same isn't it the derivative and
+everything everything is same look look
+at this way in the in in in my MLP in my
+MLP I may have I may have weights from
+one layer to other layer weights is
+literally what is this weight is
+literally just see I have layer here in
+my coinet what happens just observe this
+one carefully the relationship from one
+I have layer one here I have Layer Two
+these two layers are connected by an
+edge that edge has got some weights
+isn't it what about this conet what
+happens I can what happens in the case
+of con the relationship from one pixel
+to other pixels in convolutional neural
+networks the relationship between one
+pixel to other pixel is dictated by
+kernel Matrix isn't it I can represent
+the relationship between between this
+and this I can represent this this
+actually this just see in the in the
+context of in the context of multi-layer
+perceptron I can represent this
+relationship between layer one and layer
+to just I can I can make use I can
+represent using simple this relationship
+I can I can represent using simple dot
+product isn't it I can just make use of
+dot product the relationship but in the
+case of but in the case of convolutional
+neural network the relationship between
+input pixel and output pixel the
+relationship between input pixel and
+output pixel is just matrix
+multiplication isn't it it is is element
+wise multiplication it is element wise
+multiplication and addition isn't it
+which we know this is this element wise
+multiplication and addition which we
+know this is differentiable because your
+W transpose X just try to recall about
+our multi-layer perance what is your Zed
+your Z equal to W transpose X in the
+case of multi-layer percepton just try
+to recall our lectures on multi-layer
+percepton if you differentiate J with
+respect to W what will you get you will
+get X just like dot product your
+convolution is also just like dot
+product your convolution is also element
+wise multiplication element wise
+multiplication and addition so really it
+does not matter it's a convolution is
+just like your element wise
+multiplication and addition really it
+does not matter everything works
+smoothly the big question the big
+question comes with Max pooling isn't it
+we have two layers one is convolution
+and other one is we already discussed
+about convolution operator and the big
+question comes with actually we we
+discussed about uh convolution layer in
+convolution layer just If You observe
+carefully in the case of convolutional
+neural networks we have convolution
+layer we discussed about convolution
+operator we discussed about activations
+like reu anywh reu is differentiable
+this convolution operator which is
+element wise multiplication and addition
+this is just like dot product in your
+multi-layer percepton that's what we
+were saying J equal to W transpose
+differentiation of J all these things
+this is also differentiable this one
+differentiable this one differentiable
+now now this one is completed this com
+this this convolutional layer we don't
+have any issue with with respect to
+different differentiation now we we will
+try to understand Max pooling layer the
+big question comes with Max pooling
+isn't it so the convolutional layer just
+try to recall what is convolutional
+layer convolutional layer is basically
+convolution convolution followed by just
+observe what is convolution layer
+convolution layer is basically just
+observe just I'm repeating things
+actually just say so convolution layer
+is basically convolution first
+convolution for followed by reu
+activation unit reu convolution is very
+similar to dot product isn't it your
+convolution is very similar to dot
+product except that it is done on
+matrices convolution we are doing on
+matrices isn't it that so it is also
+differentiable what
+happens with Max pooling now we will try
+to understand about Max pooling what are
+we doing in Max pooling look at this way
+let's assume let's assume
+I have 4x4 Matrix let's assume I have
+Max pooling kernel Max pooling with k =
+2 S = 2 kernel size equal 2 stride equal
+2 I got this output here with with the
+help of Max pooling the first cell that
+I get here isn't
+it the first cell I get here came from
+the maximum value these are the maximum
+how how will I get this first value how
+will I get this value I will get finding
+maximum of maximum of this maximum of
+this maximum this is Max pooling from
+first four cells I will collect maximum
+value and I will keep here that that
+that's the procedure isn't it the I got
+this particular output I got I got this
+particular output here the first cell
+this is the first cell here isn't the
+first cell I get here came from the
+maximum the max maximum of these maximum
+maximum of these four cells isn't it
+when I have to back propagate just try
+to understand back propagation when I
+have to back propagate Max function is
+not easy Max function is very hard
+mathematically it is complex one you
+can't you can't represent it and take
+derivative so I need so I need to
+somehow compute the derivative whatever
+the derivative whatever the derivative I
+get here I should back propagate isn't
+it I should back propagate to these four
+cells isn't it I should back propagate I
+I should back propagate to these four
+cells I will calculate derivative here I
+will calculate derivative here and I
+will I will back propagate to these four
+cells isn't it that that's the procedure
+in back propagation isn't it I should
+back propagate to the which four cells I
+must back propagate to these four cells
+this cell this cell this cell isn't it I
+I need to somehow compute the derivative
+whatever derivative whatever derivative
+I get here actually whatever derivative
+whatever derivative I get here actually
+I have to back propagate here isn't it I
+have to back propagate the derivative to
+back to fors how will I do it let's
+assume let's assume just see let's
+assume I have values 1 2 3 4 just I'm
+keeping this values for understanding
+sake there are weights connecting to it
+because you have Max pool here Max pool
+layer is here let's assume these four
+four values let assume 1 2 3 4 whatever
+the derivative I get here whatever the
+derivative I get here just see that's
+what I'm saying whatever the derivative
+I get here I will back propagate isn't I
+will calculate derivative and I will I
+will back prop at it that that's the
+important one isn't it yes I I I will I
+will pass it back I will pass it I will
+pass it only where will I pass it I will
+pass it I will pass it only to maximum
+isn't it where I will pass it to only
+this point important I I will pass it
+back I will pass it to only to the
+maximum unit I don't pass it to the
+other units means I will calculate
+derivative here I will calculate
+derivative here I will pass only to this
+this cell I will not pass to this I will
+not pass to this I will not pass to this
+I will pass to only that's what I'm
+saying I will pass it back I will pass
+it back to only to maximum unit I don't
+pass it to other units means I will not
+pass here I will not pass here I but I
+will pass to this this particular cell I
+don't pass it to the other units there
+there is a very nice Kora article
+explaining this just see this picture I
+collected this from Kora Kora here it is
+just try to understand this picture here
+it explains these are all my uh values
+just let me say these are my my values
+I'm I'm performing Max pooling here just
+what am I doing here I'm performing Max
+pooling this is how it works I take the
+derivative of the output take the
+derivative take the derivative of the
+output with respect to input isn't it
+for example G is the output X is the
+input what I'm doing I'm calculating do
+G by dox the derivative of output with
+respect to input it it leads to be one
+because the derivative just If You
+observe just let me assume for
+Simplicity I'm assuming this value this
+I'm representing as X1 this I'm
+representing as X2 X3 X4 for example
+this is let Let Me 1 2 3 4 which one is
+maximum four therefore as according to
+Max pooling which value we will you keep
+here four X4 let me say X4 you have to
+calculate derivative of output with
+respect to input your output here is
+your output here is y what is your
+output here X4 why because X4 has got
+highest value that's output as per Max
+pooling Y is y c X4 as X4 is highest
+value now I'm calculating y with respect
+to X1 I'm calculating partial derivative
+of y with respect to X1 I I'm
+calculating partial derivative of y with
+respect to X2 with respect to X3 with
+respect to X4 but you are getting only
+do y by do X4 = 1 just I'm keeping this
+values 1 2 3 4 for understanding sake
+only isn't it now What's Happening Now
+what's H now what What's Happening Here
+I take the derivative of the output with
+respect to the input my derivative of
+output is X4 I'm taking the derivative
+of output with respect to input means
+what with respect to X1 X2 X3 X4 it
+least to be one isn't it it I take the
+derivative of the output with respect to
+the input it leads to be one because the
+derivative of it with respect to itself
+is one do y by dox 4 equal 1 why because
+you're derivating you're derivating with
+respect to itself that's why it's one
+the derivative of this value with
+respect to this value is always equal to
+1 y y equal X4 you're derivating y with
+respect y means X4 you are derivating X4
+with X4 that will be one because the
+exact value I what what I have to do
+here this derivative this derivative I
+have to copy here isn't it what is the
+derivative which one I have to back
+propagate here I have to back
+propagate doy by do X4 isn't it for the
+max for the max value you give the
+derivative one isn't it for the non- max
+values what's here just see here take
+the derivative of the input with respect
+to X isn't it what is the D do G by do
+XI equal to 1 why it's equal to 1 if x i
+equal to Max here for max value
+derivative is one just see here what is
+the max value here it's max value is
+four for whom derivative is one isn't it
+for max value derivative is one for non-
+Max values non- max value means X1 X2 X3
+derivative is zero isn't it derivative
+of output with respect to input isn't it
+for max value you give derivative of one
+isn't it for the non Max values you give
+derivative of zero isn't it why because
+if do Z by do XY G is output X is input
+do G by do XI which is equal to 1 if x
+is Max Max means the input output is
+same therefore you'll get one otherwise
+zero just like this case I request all
+of you just try to understand this one
+this one here derivative of X4 with
+respect to X4 is 1 I will back propagate
+to this cell only I will not back
+propagate this all other values here
+this value is one this value is one
+these all other values are zero that's
+what I'm emphasizing here that's that
+that's the important Point actually
+isn't it for my max value you give
+derivative of one for the non- max
+values you give derivative of zero
+because non-max values do not Define
+what the output here is isn't it in in
+the case of non-max values just see here
+non- Max values is 1 2 3 isn't it non-
+Max values do not Define what's the
+output here here four is maximum value
+it is defining output when when the
+derivative of y when the derivative of y
+with respect to xal Z means what does it
+what what does it mean it means that
+your Y is not related to X at all
+because as X changes y does not change
+as X changes if you if y does not change
+that means the derivative equal to Z you
+you do y by dox equal 0 means what you
+are y y is not related to X they are
+independent isn't it the Der and and
+these these things is like even what
+happen just see here I will for even
+what even if you chck change little bit
+if I that means the derivative equal Z
+and these things change slightly these
+things change slightly in the in the
+context if you change 1 as 1.1 2 as 2.3
+if you change slightly these values 1 2
+3 it doesn't matter why because still
+four is maximum I'm keeping numbers only
+for understanding sake even if these
+things change it does it doesn't matter
+isn't it it will not impact my Max
+pooling isn't yes even if this values
+change a little bit it still this four
+is maximum why isn't it it will not it
+will not impact my Max pooling why
+because this derivative again one I will
+I will back propagate here one all other
+values are zero it will not impact my
+Max ping has as the change slightly
+which one change slightly other minimum
+values if minimum value change slightly
+it does not impact my Max pooling and
+hence the D equal Z and this is the nice
+definition this is this is definition
+for Max pooling there is an equivalent
+definition equivalent definition mean
+pooling or average pooling in average
+pooling you get the same average value
+average pooling is what what is average
+pulling you have to add the values you
+have to all the value you have to add
+the values and divide with number of
+value that's that's average isn't it
+what are you what what are you
+performing you are performing simple in
+average pooling what happened you
+performing simple addition and division
+is it division isn't it then it's it's a
+very very simple but in the case of Max
+pooling what you do here is you you only
+pass the derivative back that's that's
+what I'm saying you only pass the uh
+derivative back to the maximum value and
+rest and rest
+derivatives rest of them you rest of
+them you just make uh you you just make
+equal to zero isn't it here all are
+other others are zero just observe this
+one is zero this one is zero this one is
+zero this one is maximum that's what I'm
+repeating actually now we have
+everything we have everything now we
+have two layers isn't it we have
+everything we have uh two layers we have
+convolutional layer isn't it you have
+Max pooling layer both of them you you
+learn you learn how to differentiate and
+since we know how to differentiate both
+of them we can apply all of the
+mathematics that we learned in
+multi-layer perceptrons I can I can use
+my back back propagations SGD adagrad
+Adam dropouts isn't
+it all these things all these things I
+can apply imagine if I have deep CNN
+Concepts like uh Dropout dropouts are
+still useful because they they they are
+there to avoid to avoid overfitting so I
+can use all the missionary like
+Optimizer
+prop optimizers like back propagation
+like Dropout optimization of
+convolutional optimizations of
+convolutional neural networks is exactly
+like multi-layer perceptrons except the
+mathematics change changes slightly but
+the fundamentally it is it is same thing
+I request all of you please go through
+these slides once or twice here what am
+I doing if You observe carefully just
+I'm discussing about uh just I'm
+discussing about different convolution
+layer and Max pooling layer and both are
+differentiable I related this
+convolutional layer with multi-layer
+perceptron just go through this lecture
+if you have any difficulty just please
+keep a comment thank you very much
+my dear friends welcome to
+classes on applied data science with
+python this is lecture number
+599 in this lecture we will try to
+understand
+convolution to design convolution neural
+networks first let's understand this
+concept called
+convolution and we will understand this
+concept of convolution from the
+perspective of edge detection remember
+Edge detection is what are V1 just try
+to recall we discussed what is V1 in my
+previous lectures V1 are primary visual
+CeX actually detects edges Edge
+detection is one of the simplest
+mathematical operation and we will will
+first learn this then we will build new
+things and I will also introduce you a
+concept of convolution from the
+perspective of edge detection let's
+actually let's actually take a simple
+example let's take a 6x6 image let's
+assume I have an image like this let's
+assume it is a 6x6 image let's assume
+assume there is a region of the image
+like this which is fully dark let me say
+how many regions are there in this
+particular image there are two regions
+one is white and another one is dark
+let's assume um that below region is
+block or dark lower half of the image is
+dark and upper half of the image is
+white so this region is white above
+above off is white this and Below off is
+I can say black or dark now in this
+image if I ask you is there an edge in
+the image what is my question is there
+an edge in the image it's a small image
+it is 6x6 image if I ask you is there
+any Edge in the image you would say
+Obviously yes there is an edge there is
+an edge here because everything just see
+because everything above just see this
+is a horizontal line isn't it there is
+an edge here because everything Above
+This Edge and I can say it is horizontal
+Edge isn't it because everything Above
+This horizontal Edge is of one color
+everything below this off of different
+color so you would say you would say
+that there is an Edge isn't it there is
+an edge here isn't it now our goal is
+given this we we take a simple example
+of 6x6 image we will take a simple
+example of grayscale image let me say
+what is this image gray scale image we
+will come to color images later simple
+for time being let me consider simple
+gray scale of 6x6 image what is the size
+of this image 6x6
+and we will learn how to detect a
+horizontal Edge isn't it we will try to
+detect an edge we will see how to detect
+let's understand what is the input my
+input and what is input is 6x6 the input
+is simple 6x6 image let me just expand
+this 6x6 image so that I will explain
+what's happening here isn't it so this
+is my 6x6 pixel image let's actually
+write uh uh pixel values isn't it pixel
+values here because the lower bottom
+just try to recall our image lower
+bottom all block isn't it let's assume
+all block pixels having the value
+255 it's a grayscale image isn't it
+grayscale image basically means it has
+values between 0 and 255 so I am just
+putting all these values wherever 255 is
+written that pixel is block or dark all
+the pixels that are white I'm just
+putting them a value of zero very very
+simplified notation so this is a simple
+grayscale image of course you can also
+you can also
+scale you you can scale this you your
+gray scale image what is this its value
+is 0 to 255 you can scale this image to
+0 to 1 by normalizing the image because
+the maximum value what is the maximum
+value maximum value is 255 minimum value
+is zero isn't it if I apply minmax type
+of normalization what happens you can
+just replate all replace all these
+values 0 by 0 and um and 255 by 1 isn't
+it 250 can be replaced by one and 0 will
+be replaced by Zer by using min max
+normalization
+isn't it depends on how you represent
+your grayscale image it always depends
+on representation of your G grayscale
+image now given this grayscale image so
+these pixels are all white just see
+these pixels are all white these pixels
+are are dark zero values means white
+pixels 255 means dark pixels so actually
+there is a difference in color isn't it
+there is a difference in color from one
+dark is as I told you dark is and dark
+or black is represented by 255 white is
+represented by zero is isn't it so
+actually there is a difference in colors
+isn't it there's a difference in colors
+from one region to other region from
+White region to dark region is it that's
+why that's why my ey sees edge here I
+can see the edge as there are two
+different colors because there's a diff
+difference in color color between these
+two regions this um white region and
+black
+that's why my eyes see an edge now how
+do you detect an edge that's important
+to detect an edge we do a a simple
+operation what is that operation that
+operation is known as convolution
+operation so this operation when you do
+it on matrices is no more multiplication
+this is called convolution this
+operation is called convolution operator
+the star people used to represent this
+operator Star as convolution operator I
+will explain you what is convolution we
+will try to understand now if I have
+other Matrix let me say I have other
+Matrix so let's say let's say I have 3x3
+Matrix this Matrix is often called as
+convolutional kernel this is not you
+must understand this is not svm kernel
+this is often called as
+or filter or mosque or operator there
+are multiple names to it it's often
+called as kernel isn't it it's often
+called as kernel there are multiple
+names to this Matrix so this Matrix I
+have values let me say I have values
+like this I will explain you why these
+values and this the things like that
+let's assume I have 3x3 Matrix that has
+values like + 1 + 2 + 1 0 0 0 -1 - 2 - 1
+first first thing you notice notice the
+values in the first row just understand
+the values in the first row are same as
+the values in third row except for the
+sign isn't it the values in the middle
+row If You observe values in the middle
+row all are zero so you have a 6x6
+Matrix let's call this is input uh what
+is this image let's call this is an
+input image so what is the task of edge
+detection you are given an input image
+and you want to detect edges and we
+detect edges by
+applying what is the task here we detect
+edges by applying convolution operator
+in the input Matrix because image is
+nothing but Matrix you can think of
+image is a matrix of pixels now this
+first one 6x6 Matrix is an input image
+this 3x3 Matrix is Kernel or filter
+there is a special name for it it is
+called what is that this
+particular of course input image is a
+matrix what is this Matrix name 3x3
+Matrix name there is a special name
+called soel Edge detector this 3x3
+Matrix in image processing is called
+soble Edge detector isn't it to be more
+precise it is called soal horizontal
+Edge detector means which type of edges
+will it detect it will detect horizontal
+edges let's see what it does it's very
+very important you have this Matrix what
+Matrix input Matrix or input image and
+you have this 3x3 Matrix that is soal
+soal horizontal Edge detector so the
+operation of
+convolution what is this this operation
+if I apply the star is known as
+convolution operation isn't it if I
+apply convolution operation in between
+input image and my soel Edge detector or
+kernel it will generate a 4x4 Matrix so
+it generates a 4x4 Matrix let's see how
+it generates let me let me walk through
+you this uh this with simple example so
+that uh uh so that we will you will have
+much more clarity and I will explain you
+why it is why it creates a 4x4 Matrix
+and how it how it creates how it creates
+Matrix and so first first it says this
+is my uh kernel Matrix the 3X3 Matrix is
+Kernel or my filter and my input Matrix
+of is of 6X 6 so I will first try to
+place this 3x3 Matrix that is Kernel
+Matrix on top of my input Matrix when I
+draw a 3X3 Matrix matx let me draw just
+see let me draw 3x3 Matrix first I will
+place this 3x3 Matrix on input image on
+input image Matrix here I have values of
+zero isn't it just see here what what am
+I doing here just observe just I'm
+multiplying corresponding elements means
+the first element is Zer in 6X 6 and
+first element is + 1 and 3x3 I'm
+multiplying Z 0 into -1 just I'm I'm
+multiplying these corresponding elements
+just I'm adding If I multiply and add
+what will you get so what are you what
+are you doing here you're multiplying
+corresponding cells multiply all of them
+and add them up so this is literally it
+is basically component wise
+multiplication followed by addition
+isn't it it is component wise
+multiplication followed by addition this
+is very very important what value are
+you getting here you are getting this
+particular value zero isn't it that's
+why I'm placing zero here that we must
+understand isn't it yes this is very
+very important corresponding cells will
+be multiplied and when we multiply what
+is the value we got the sum of some sum
+of them is zero If I multiply
+corresponding elements and sum of them
+if I add add all those corresponding
+multiplication what value I'm getting
+I'm getting zero I'm that that that zero
+I'm placing in 4x4 Matrix in first entry
+isn't it if I take this 3x3 Matrix so
+when I use first 3x3 Matrix I got first
+time what I'm doing I'm placing this
+kernel Matrix 3x3 Matrix on input image
+and I'm multiplying corresponding
+elements and adding suming them and
+resultant value is zero to fill next
+value what is this next value this is
+next C to fill the next value what what
+do we do I will shift by one and now I
+will use again I will use this 3x3
+Matrix just I'm shifting that right side
+by one position again what am I doing
+again component wise multiplication
+followed by addition isn't it even that
+will result zero just if I do component
+wise multiplication and addition what
+value are getting you are getting zero
+let's take a cell which does not result
+in zero let's take simple case let's
+take uh this Matrix kernel Matrix 3x3
+Matrix and I'm considering which one I'm
+considering I'm considering this this
+part which part anyway I already
+highlighted this part just this one
+isn't it what is this this and where can
+I keep this one I have to keep here
+isn't it just just what will you get if
+I multiply corresponding elements and if
+I add it that resultant value is what is
+that resultant value
+-120 is isn't it so what what is the sum
+of the all of them you will get a value
+of -1 020 so you place value of -102 0
+where will you place I must place here
+that's what it says isn't it let's see
+let's see another cell just let me
+consider just what am I doing here just
+what am I doing I'm taking my kernel 3x3
+I'm placing here and I'm placing an
+input image multiplying corresponding
+elements adding and keeping values just
+again 3 by just I'm moving every window
+right side this is first window second
+window third window fourth window isn't
+it each window is 3x3 I'm placing this
+kernel from first position and moving it
+right right right uh towards right by
+shifting one one cell so that how many
+values you are getting here you are
+getting four values isn't it let's this
+what will you get here just what I have
+to do I have to multiply corresponding
+elements and I must add it what will you
+get you will get these values just see
+these are the cells isn't it this this
+is the procedure what am I doing here I
+what am I doing just I'm doing component
+wise component wise
+multiplication and addition isn't it
+what values this this is if if we keep
+on continuing this procedure I will I I
+will get these values isn't it remember
+we had a 6x6 input Matrix we have 3x3
+kernel and our output Matrix is 4x4 why
+is it why is it 4x4 because I cannot
+create 6x6 output by using I I cannot
+create 6X 6 input your input size is 6x6
+your output size is 4x4 I cannot create
+6x6 6x6 output why because your kernel
+size is 3x3 I cannot I cannot create 6x6
+output of it how many 3x3 we have if I
+if I have 6X 6 Matrix here just observe
+in how many ways my 3x3 on top of your
+input Matrix this is first way this is
+second way this is is third way this is
+four way how many ways there are total 1
+2 3 4 that's why I'm getting four values
+um I'm uh I'm first second third fourth
+that's why I'm getting these values
+isn't it same manner just say I'm
+getting first second third fourth in
+similar manner I can continue here also
+this is first one this is second one
+this is third one this is fourth one
+that's why I'm getting these values is
+that's why I'm getting other values
+isn't it
+I can place four times I can only place
+four times I can only place four time on
+rowwise as well as column wise I can I I
+can even place four times in rowwise as
+well as column wise because I can I I
+can I can only convolve I can only
+perform convolution four times here my
+resultant after performing the
+convolution operator with soble Edge
+detector what is the output this is my
+output what is output this is my output
+just let me show this is my output is
+isn't this is the output that we got
+let's understand this output in
+in we will try to analyze why this is
+Edge detector that's that's an important
+why we are saying how it detects Edge
+now just understand time being you are
+getting 4x4 output image by using by
+using this particular
+this particular output how we will
+decide about Edge detection how one can
+detect edges in given input image that I
+will discuss in my next lecture that is
+in lecture number 600 time being just
+try to understand how am I creating how
+am I creating this 4x4 matrix by using
+6x6 input image and 3x3 kernel thank you
+very
+much
+friends welcome to  on
+applied data science with python this is
+lecture number
+367. in this lecture we will try to
+understand
+constraint optimization and principle
+component analysis till now
+optimization problems we have seen are
+maximizing f of x or minimizing f of x
+these are the types of problems that we
+have seen let us write principal
+component analysis formulation what is
+this PCA formulation if you forgotten
+please go back to the
+chapter of dimensionality reduction and
+you will see that formulation of PCA the
+formulation of PCA looks like this what
+is that formulation of PCA
+just see this one
+the formulation of PCA is find the
+maximum U that is important here I can
+say
+find
+maximum U which maximizes 1 by n into
+summation of Sigma I equal to 1 to n u
+transpose x i whole Square such that U
+transpose U equal to 1. this is the
+problem this is similar to the problem
+maximizing is it not similar to
+maximizing f of x
+it is similar to maximizing maximization
+of f of x over X such that g of x equal
+to some constant isn't it if you think
+about it this this part of what is this
+this is objective function isn't it just
+you can recall this is here f of x this
+is G of x equal to c means this is
+constraint U transpose U equal 1 is
+basically I can say it is constraint
+isn't it this part is what is this part
+this particular part this one is I can
+say we have to the maximization of f of
+x it is similar to maximization of a
+function so maximization of u 1 by n
+Sigma equal to 1 1 to n u transpose x i
+whole Square isn't it you are trying to
+maximize this one maximizing 1 by n
+summation of I equal to 1 p n u
+transpose x i whole Square this is
+called actually this is called objective
+function
+what is this this is f of x similar to f
+of x I can say it is objective function
+in optimization generally in
+optimization how you can call this one
+this one by n summation I equal 110 U
+transpose XL score is an objective
+function isn't it this U transpose U is
+known as constraint this is
+this is constraint isn't it because you
+are saying that you want to maximize
+this function maximize 1 by n Sigma
+equal to 1 to n u transpose X whole
+Square such that U transpose equal to
+one if this constraint if this
+constraint U transpose U equal to 1 is
+not satisfied if you find U if you find
+U that does not satisfies U transpose U
+equal to 1 what does it mean will this
+the solution will not be accepted so the
+optimization problem where we have
+constraint like U transpose U equal to 1
+is called as constraint optimization
+problem so the general constraint
+optimization problem the general
+constraint optimization problem looks
+like this maximization of what is this
+maximization of f of x over X such that
+g of x equal to c h of X is greater than
+or equal to D maximization of f of x
+what is this this is objective function
+this one is equality constraint this one
+is inequality constraint isn't it
+suppose you have let me say if you have
+something like
+something like let me say k of X is less
+than or equal to e so if you have a
+constraint of this K of X is less than
+or equal to e what you have to do you
+have to multiply it you will you quickly
+change it you multiply with a negative
+sign isn't it If I multiply with
+negative sign minus K of X is greater
+than or equal to minus a so given less
+than or equal to constraint so given
+less than or equal to constraint you can
+easily convert it into greater than or
+equal to constraint by just multiplying
+both sides by negative sign minus one
+that's why we are not putting less than
+or equal to constraint in formulation
+isn't it in general form you have
+equality constraint like this you have
+equality constraint like G of x equal to
+C and inequality constraint like h of X
+is greater than or equal to D you need
+not bother about constraint like
+chauffix less than or equal to e why
+because this particular constraint can
+be converted in the form of greater than
+or equal to by multiplying by just
+multiplying by minus 1. now let's see
+how to solve this problem just how can I
+solve just say this is a problem let's
+see how to solve this problem we have we
+have we have seen how to find Maxima and
+the Minima of f of x we know how to find
+Maxima and minimum of f of x isn't it
+but here what is the difference here you
+have
+here you have constraint that we have to
+solve we have seen how to find Maxima
+and minimum of f of x but how to find
+Maxima and Minima given constraint here
+you have constraints isn't it Maxima of
+Minima of f of x you are given
+constraint is G of x equal to C and H of
+X is greater than or equal to this such
+that these are constant anyway we are
+not including less than constraint why
+because you can always convert it into
+greater than or equal to constraint just
+see this is General constraint from
+maximization of f of x in a such that g
+of x equals c h of X greater than or
+equal D this is objective function this
+what is this this particular function is
+objective function this is equality
+constraint this one is inequality
+constraint isn't it now maximization of
+f of x such that g of x equals c h of X
+is greater than or equal to D this one
+we have to solve isn't it it is very
+important problem let's see maximization
+of f of x such that graph x equals C and
+H of X greater than or equal to D this
+is the problem that we that we have we
+will we will modify this problem we will
+modify using something called lagrangian
+Multiplex we will try to understand what
+is lagrangian Multiplex we will modify
+this problem by using lagranges
+multiplier the idea is as follows
+construct new function L I am
+constructing a function L this function
+is called lagrangian function and how
+does it work how can I construct it is
+simple and straightforward just take
+objective function minus Lambda into G
+of x minus C minus mu into D minus D
+minus h of X this Lambda and mu are
+called lagranges Multiplex Lambda is
+greater than or equal to 0 mu is greater
+than or equal zero Lambda and you are
+called lagranges multi price Lambda is
+greater than or equal 0 mu greater than
+equal to zero so the a given problem
+this this is the problem like this so
+given problem like this we converted
+this problem into lagrangian now this is
+this is a beautiful piece of
+optimization the proof of this is out of
+the scope it says now we have to solve
+this one how can I solve this one it is
+simple just you have to differentiate
+you have lagrangian function what is
+your lagrangement function L is L is
+nothing but this this is my l l has got
+X parameter X Lambda and mu just I must
+differentiate this capital L lagrangian
+with respect to rho L by dou x equals 0
+dou L by dou Lambda equal to 0 and dou L
+by dou mu equals 0 I have to solve these
+equations if I solve this equations I
+will give I will get x value Let It Be X
+tilde my x value let me assume it is X
+tilde X tilde is my x value this one is
+isn't it
+so that you will get X tilde value isn't
+it yes yes if you solve all all of them
+let's assume that we have got x value as
+X tilde what is my X till the X tilde
+equal to maximization of f of x over X
+such that g of x equal to C and H of X
+is greater than or equal to D our PCA
+problem is what is our preca problem
+just try to recall
+maximization of u 1 by n into Sigma I
+equal to 1 by n u transpose x a whole
+Square such that U transpose U equal to
+1 this isn't it the problem this this
+problem I can say the same problem this
+problem can be represented by using some
+sort of algebraic Transformations like
+this how can it represent the same
+problem just how can I write it
+maximization of U transpose yes you such
+that U transpose U equal to 1 we can
+write like this what is this what is
+this Yes Yes means what I can say s is
+covariance Matrix yes is covariance
+Matrix how can I get this s if you have
+a data Matrix X you we know how to write
+data Matrix X it is x i whole transpose
+isn't it how can I get covariance trans
+Matrix I I must find X transpose X
+basically this x is I can say it's a
+matrix of all of your exercise isn't it
+let's focus on this this particular U
+transpose U equal to one because this
+particular um the this particular
+maximization of U transpose s u such
+that U transpose is equal to one why
+because this formulation is important
+this formulation is easy to solve this
+formulation is easy to solve that's why
+this is by some algebraic transformation
+one can always convert this particular
+problem like this isn't it our PCA
+problem is maximization of use U
+transpose yes you such that U transpose
+e equal to 1 isn't it what is your s s
+is covariance Matrix that's what I am
+writing s is covariance Matrix given
+data points capital X is data Matrix you
+are you will get S equal to X transpose
+X transpose X we already discussed in
+our PCA classes we constructed a data
+Matrix we calculated covariance Matrix
+isn't it this is our PCA problem
+maximization of use U transpose yes U
+transpose s u says that U transpose e
+equal to 1. now what I have to do I must
+construct lagrangian how can I construct
+lagrangian L of Lambda comma U comma
+Lambda equal to this is U transpose XC
+is objective function minus Lambda into
+what is this constraint U transpose U
+equal one can be written as U transpose
+U minus one this this just differentiate
+with respect to L with respect to u dou
+l dou by dou U of L what is your l u
+transpose U minus Lambda into U
+transposive plus this is minus of minus
+this is plus Lambda isn't it plus Lambda
+if you try and differentiate with
+respect to U what will you get you will
+get yes you here you will get Lambda U
+as Lambda is constant you will get s u
+minus Lambda U equal to 0 you can write
+s u minus Lambda equal to 0 as s u equal
+to Lambda this is s u equal to Lambda
+this is equal to Lambda u s is what is
+this s s is covariance Matrix s is
+covariance Matrix isn't it and U is U is
+a vector what is it U is a vector this
+is definition of what an eigen value it
+is something like a x equal to Lambda X
+Lambda is an eigen value and X is
+eigenvector here something Lambda is
+eigen value U is eigenvector isn't it I
+can say if a u equal to this is
+something like otherwise I can write a u
+equal to Lambda u a equal to Lambda U
+then U is set to be eigenvector this U
+is known as eigenvector and Lambda is
+set to be an eigenvalue this is the
+definition of eigen value and
+eigenvector this can be solved by saying
+U is eigenvector of s Lambda is eigen
+value of a eigen value of s when we
+learn PCA we wrote the optimization
+problem and we said without proving
+without proving that the solution to the
+optimization problem is to take the
+eigen values and take the top eigen
+values and curves burning eigenvectors
+of the covariance Matrix calculus we did
+not prove it but here is a proof this is
+the the this is what constraint
+optimization problem looks like just see
+this is this is s of U equal Lambda u s
+is covariance Matrix U is Vector
+eigenvector this is definition of
+eigenvalue and eigenvector use the eigen
+value of s Lambda is the you use the
+eigen vector of s Lambda is the eigen
+value f s this is I can say this is what
+constraint optimization looks like just
+go through this particular lecture if
+you have any difficulty please keep a
+comment thank you very much
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number 608 in
+this lecture we will try to understand
+receptive fields and effective receptive
+Fields so this is one of our student
+query so he asked for what is retive
+field that's the question and what is
+the difference between rece field and
+effective receptive field again this
+term receptive receptive field term that
+we have not used as part of this lecture
+series but I will explain it the concept
+behind it the concept behind this is
+very simple that that we have already
+covered in our convolutional neural
+networks chapter of uh chapter of ours
+uh in the Deep learning section or in
+the Deep learning module so the
+receptive field the term receptive field
+itself comes from just see this one the
+term receptive fold itself comes from
+Neuroscience isn't it but its
+applications this particular term came
+from Neuroscience but its applications
+in the context of convolutional neural
+networks is as follows imagine if I have
+imagine if I have an image like this
+imagine in the very first layer Let Me
+Assume in the very first layer let's
+assume I have I have a convolutional
+filter in first layer or uh you have a
+convolutional kernel of size 5x 5 where
+it is it is in first layer just see here
+I have a
+convolutional here let me say let me
+write like this
+just ch let let me write this one this
+is first layer let me say this is first
+layer in first layer I have a
+convolutional kernel whose size is 5X 5
+isn't it of course the it's a kernel of
+5x 5 of course what what I will have
+here is I will not have just one kernel
+I will have I will have in in the first
+I will have multiple kernel like this
+that's important just say what I'm
+saying in the first layer let's assume I
+have convolutional filter or convolution
+kernel is isn't it I will have multiple
+kernels like this that's important isn't
+it I will have multiple kernels like
+this but looks but let's look at from
+the perspective of just one kernel so
+this kernel what is the size of this
+kernel 5x5 so a receptive field so let
+let me Define let me first Define this
+term then I will discuss about effective
+receptive field so receptive field is
+basically nothing but at any point just
+see uh here actually I'm discussing this
+with the perspective of single kernel
+but I can have multiple kernels like
+this isn't it just say this one what it
+says what it is retive field so recipy
+field is basically nothing but at at any
+point in at any point how does this
+convolution operation work at any point
+I will take this convolution filter what
+is this called convolution filter 5x5
+convolution filter or convolutional
+kernel I will pass it through various
+parts of the image just see I'm taking
+I'm taking this particular kernel I'm
+passing through here this I will keep
+here and again next year next year means
+what I'm doing I what I'm doing I will
+pass this 5 by five cross 5 cross 5
+kernel I will pass it through various
+parts of this input image isn't it and
+for each part I generate an output isn't
+it for each part I will I generate an
+output receptive field is basically
+nothing but it is the it is that part of
+the image which the convolutional kernel
+operates at any at given point of time I
+will repeat re retive field is basically
+nothing but what is receptive field
+receptive field is basically nothing but
+it is that part of the image just see
+this is that part of the image that part
+of the image which which the
+convolutional kernel operates operates
+on given operates on at any at at a
+given at given point of time for example
+at a given point of time just let me
+assume at a given point of time this
+convolutional kernel which convolutional
+kernel this particular convolutional
+kernel 5x5 kernel we'll see 5x5 bunch of
+pixels here here in input image it will
+see 5x5 bunch of pixels in the image
+input image again again these pixels
+could be colored these pixels are gray
+scale if if it is colored pixel I will
+have RGB in the T are otherwise I will
+just have simple image with gray scale
+values so receptive field so receptive
+field of this convolutional kernel which
+can at at which convolutional kernel 5x5
+convolutional kernel at given time T
+will be this 5x SE this 5x5 section just
+see which which 5x5 section this 5x this
+is retive field actually isn't it this 5
+by um this 5x5 section of the image that
+is being convoluted using this
+convolutional kernel to generate one
+value in the output image isn't it
+output image of course this 5x 5 5x5
+keep changing isn't it first I will keep
+5x5 here then I will keep 5x5 here then
+I will keep then I will it keeps
+changing isn't it it keep changing it at
+a different point of time I might have
+another 5x5 region 5x5 region in the
+image isn't it which will be convoluted
+with this 5x5 kernel and another output
+get another output is generated and the
+output will be output will be somewhere
+actually here first I will convolute
+this and this iput I output I will keep
+here and this and this I will convolute
+I this output will be in different place
+isn't it so so receptive field basically
+is the part of the image which the
+convolutional kernel at given time T is
+being convoluted with very simple now
+what is the effective receptive field
+what is this effective receptive field
+this is slightly more intricate concept
+but simple I will try to explain with
+example just just one convolutional k
+but example with with example of just
+one convolution Kel but in reality in I
+will try to understand with one
+convolutional kernel but in reality you
+will have multiple convolutional kernels
+isn't it whose weights we learn uh
+through back propagation isn't it how
+how can we learn weights by using back
+propagation so let's assume I have this
+in this is my input image I have this
+convolutional kernel isn't it a this
+convolutional kernel again let's look at
+only from one kernel perspective isn't
+it the this is single kernel isn't it
+where this single kernel will generate
+an output remember let's assume this
+kernel is in the first layer this 5x5
+cross kernel where it is it is in the
+let's assume this 5x5 cross kernel is in
+the first layer and this is output of
+the first layer which one is output this
+one output of the first layer isn't it
+in reality what happens we will have
+multiple kernel that's important what
+what we get what we get what we get here
+with multiple kernel what we get here is
+a tensar but but let's look at but let's
+look at it from this perspective only
+one kernel perspective now imagine I
+have other convolutional layer Let Me
+Assume second convolutional layer in my
+second layer let's assume I let's assume
+assume also a convolutional layer where
+the size of my convolutional where the
+size of size of my convolution
+convolutional kernel is 3x3 it it is in
+second layer that is important in the
+second stage now because this is 3x3
+what happens 3x3 region of this output
+image just say 3x3 here you have 3x3
+kernel isn't it this 3x3 region this is
+output image isn't it layer one output
+is here isn't it 3x3 region of this
+output image this is the output of the
+first layer which one is the first layer
+output this is output of the first layer
+isn't it output of the first layer my
+original image is in this input layer
+this is my original image this is in in
+first layer I have original image is
+isn't it my original image in the input
+layer input layer I must say input
+uh my original layer my original image
+is here isn't it this 3x3 at any given
+time just say this
+3x3 let me say like this this 3x3 this
+3x3 at at any given time will be
+convoluted will be
+convoluted actually let me say this 3x3
+let me explain like this this
+3x3 this 3x3 just this is a part of
+output image whose output layer one
+output image isn't it this 3x3 which 3x3
+this 3x3 at any given time will be
+convoluted with this kernel with which
+kernel 3x3 kernel isn't it output will
+be generated similarly at different time
+another 3x3 another 3x3 here and this
+this 3x3 will be convoluted with this
+3x3 kernel and it will be Convent and it
+will generate output and so on so forth
+now here here the receptive field in in
+here in the here the receptive field in
+this image in this output this one is
+receptive in this image this is
+receptive field isn't it IM image after
+the first layer isn't it this is
+receptive field this is retive field for
+this particular kernel for 3x3 kernel
+isn't it the receptive field in this
+image in in this output image after the
+first layer the receptive field in this
+image after the first layer means what
+which one is after the first layer this
+is after the first layer after the first
+layer the receptive field in this image
+of this kernel at any given time T is
+just these 3x3 pixels isn't it here you
+will get 3x3 pixels only isn't it but
+the effective receptive field what is
+effective receptive field is a part of
+the original image which one is original
+image which one is original image this
+is original image this is important this
+is original image input image isn't it
+but the effective receptive field is the
+part of the original original image
+whose pixels are being indirectly
+convoluted with this indirectly
+convoluted with this 3x3 isn't it with
+this 3x3 the key idea is this this
+single Val this single Valu is generated
+here here value is generated in the
+output image the single values are
+generated by using five 5 cross 5 region
+here isn't it five 5 cross 5 this 5
+cross 5 got convoluted with 5 cross 5
+here isn't it with this and this single
+Pixel that pixel values can be stored
+here this five cross 5 kernel in layer
+one will be convoluted with five cross 5
+pixels in the input image and after
+convolution you will you will keep
+values in this output image isn't it the
+it next pixel was generated how next
+pixel will be generated again this 5 5
+cross 5 again I will keep I will
+convolute this other part of 5 by 5
+cross 5 image five cross 5 part of the
+image again I will store this value
+somewhere in the output image is is
+isn't it again this depends on stride
+and other parameters this third one will
+be generated and by again third one
+again I will take one more 5x5 and I
+will take um convolution with 5x5 kernel
+and I will store this value isn't it
+this is the procedure which we discussed
+is isn't it we we convoluted we
+convoluted with this and the third one
+was generated first one second one third
+one similarly so on so forth that's what
+I'm repeating actually just see here
+what's happening this one I'm keeping
+first time and convoluting keeping some
+value again 5x5 keeping some value again
+5x5 convoluting and keeping so on so
+forth so effectively this kernel which
+kernel 3x3 cross kernel which three this
+Con this kernel this convolutional
+filter this 3x3 convolutional filter is
+being generated look at look at this
+directly it it been convoluted by
+applying the convolutional operation
+just what I'm doing this 3x3 operates
+this part isn't it which one this one
+will operate here isn't it what happens
+here just
+see here 3x3 means what by applying in
+in Layer Two in Layer Two I have 3x3
+kernel this 3x3 kernel will operate on
+output of the layer one output of the
+layer one is image second let me say
+that is image two just with this 9 pixel
+this 3x3 means what this 3x3 kernel
+means this 9 pixel pixel in the output
+image isn't it but if you look at if you
+look at from the perspective of the
+input image there is much larger area
+here just see in the input image you
+taking 5x5 isn't it much larger area
+area here of pixel which are indirectly
+being which are indirectly being which
+are contributing the these 5x5
+convoluted pixels are contributing for
+3x3 convolution isn't it because this
+whole this whole thing this input image
+convoluted with 5x5 isn't it to to
+generate to generate this output image
+to generate this and again I'm using
+this 3x3 kernel with this particular
+output image isn't it yes if this is is
+output to generate this output image
+this is much bigger one which one is
+much bigger one this one is much bigger
+one isn't it so if you look at the
+effective receptive field if you look at
+the effective receptive field of this
+kernel which kernel I'm discussing about
+effective receptive field for 3x3 kernel
+isn't it the the effective receptive
+field field of the whole part of the
+image one of the whole part of this
+image the effective receptive field let
+me let me uh explain the effective
+retive field of this whole part of this
+image which image input image input
+image which are indirectly or directly
+contributing to these pixels which
+pixels this pixel this is contributing
+to this indirectly or directly
+contributing to this output image which
+is output image which is being being
+convoluted so so receptive field
+basically simply speaking is a region of
+the image which a kernel is being
+operated isn't it what is the receptive
+field what is receptive field this is
+Kernel what is this one effectively
+receptive field becomes important when
+you have multi-layer convolutional
+neural networks that I will discuss what
+it says just understand like this
+receptive field basically simply
+speaking is the region of the image this
+is the region just see this is the
+region of the image this is the region
+of the image which a kernel is being
+operated isn't it this is the region of
+the image this kernel is operating this
+is known as receptive field is it it at
+any given time effective receptive field
+isn't it now we are interested in
+understanding effective receptive field
+becomes important when you have multi
+layered convolutional neural networks
+when you have multi-layered convolution
+neural network wherein multi-layer
+convolutional neural network means where
+in second layer third layer fourth layer
+Etc isn't it the effective the the
+effective region of the original image
+the effective effective receptive field
+is the effective region of the original
+image whose pixels which one is original
+image here your input image is original
+image this is original image isn't it
+the effective region of the original
+image whose pixels have directly or
+indirectly contributing this
+convolutional kernel which convolutional
+kernel this 3x3 convolutional kernel
+isn't it why is this indirectly
+contributed why because why is it indect
+because this
+first the because this first one what is
+this first one part of input image isn't
+it on input image what you are doing
+here you're taking this 5x5 cross kernel
+by that only you are generating pixels
+in this output image indirectly they are
+impacting this convolution which
+convolution for second kernel whose size
+is 3 3 by3 isn't it because of first
+first kernel got
+convoluted conv convoluted with 5 cross
+5 to generate this first image is
+convoluted with 5 cross 5 to generate R
+pixels in where in this output image
+this is now getting convoluted these
+pixels are now getting convolute
+convoluted with this 3x3 kernel all
+these pixels are all these pixels are
+contributing all these pixels are
+contributing directly or
+indirectly to this convolution which
+convolution this 3x3 kernel convolution
+with this 3x3 part isn't it that's why
+the that's why the effect receptive
+field is much
+larger is the effective receptive field
+is much larger in the original image
+isn't it in original image just we are
+saying that 5x five that's all this is
+this is very simple concept the
+terminology is something that we have
+not used as part of course course videos
+but it is simple you can find this in
+most of the textbooks just I request all
+of you to listen this lecture once or
+twice so that you and understand if you
+have any difficulty please keep a
+comment just it is simple and
+straightforward actually in the case of
+receptive field what is receptive field
+this is the region isn't it just this is
+a kernel this kernel you will convolute
+this in in actually if you go back and
+if you go back and see the just see what
+we were saying let me go back uh in
+medical terminology we we are saying
+some images see this is receptive Fields
+isn't it in medic
+terminology this one is receptive field
+we are saying this is one receptive
+field this is one receptive field in
+similar manner here also what H what's
+happening an input image you you were
+kernel let me say 5x 5 5 cross 5 kernel
+in which region in which region it is
+operating that is retive field again in
+another region it is operating that is
+another retive field again in another
+region it is operating it is another
+retive field isn't it that's what just
+one re field other receptive field other
+receptive field isn't it but effective
+receptive field comes where will it come
+in the case of multi-layer convolutional
+neural network isn't it if you have
+first layer second layer third layer
+just see effective retive field becomes
+important when you have multi-layered
+convolution neural network whereas your
+second third fourth layer that's what
+I'm saying here in the case of in the
+case of effective conver effective
+receptive field we are saying this about
+this kernel with the respective of this
+particular kernel we are saying
+effective receptive fields in the in the
+respective of five this layer one first
+layer uh kernel we are saying just
+receptive field in the case of second
+layer kernel we are saying effective
+receptive field it's simple if you apply
+this one if you apply this particular uh
+particular uh kernel 5 cross 5 kernel on
+this particular image this portion is
+receptive field again if I apply here
+again on cross 5 this is receptive field
+again if I apply here this will be
+receptive field again if I apply here
+this will be retive field isn't it after
+convoluting you will generate pixels
+here isn't it you will generate pixels
+here just again I'm taking 3x3 regions
+here and I'm convoluting with the this
+3x3 kernels isn't it that's what it says
+effective retive field the effective
+region of the original image whose
+pixels are directly or
+indirectly contributing to the yes who
+pixels are contributing to the 3X3
+convolution kernel here indirectly or
+directly which one are contributing this
+is contributing for this convolution
+this 3x3 convolution with these pixels
+just try to go through this lecture um
+if you have any difficulty please keep a
+comment thank you very much
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number
+598 in this lecture we will try to
+understand convolutional neural networks
+biological inspiration of visel
+CeX before understanding this lecture I
+request you to go through my previous
+lecture that is lecture number
+597 so what they have done is they have
+taken a cat just see they have taken a
+cat and they gave anesthesia to the cat
+that's important isn't it if you give
+anesthesia to cat what happens which
+means the cat cannot move that's what it
+says cat cannot move they have given
+anesthesia to this cat and which means
+the cat can't move a cat is going to sit
+static isn't it but its brain everything
+is working and they and they actually
+have a light bar just see in this
+particular image you have something like
+um light bar isn't it just see this is
+the light bar yes they they show
+something to the cat you you have cat
+here isn't it just see you have cat here
+which is sitting which which is
+anesthesia for for which anesthesia is
+given and there is a small probe which
+is called micro electrode just just let
+me say this is micro electrode so they
+have connected this micro electrode to
+the brain of the cat especially to the
+visual CTIC isn't it so most mammals
+like monkeys cats all of us have a
+special area in brain called visual
+cortex so they connected to the visual
+cortex and they started recording isn't
+it what they did they started recording
+Neon also fires neuron is basically
+electric pulse imagine there is a neuron
+and neuron can Spike which means an
+electric pulse which means you can
+measure some
+electrical electrical activity of neuron
+so they realized that there are some
+neurons there are there are some some
+some neurons which fire only when there
+is specific type of light p pattern or
+specific type of um light pattern I can
+it's a pattern basically so this example
+shows if the light pattern is vertical
+just see if your light pattern is
+vertical so there is a a vertical light
+vertical means what vertical light and
+everything around it is dark when you
+see this when you when your cat sees
+this what what what itical pattern there
+is lot of stimulus isn't it just observe
+in this diagram there is lot of stimulus
+just I request you to go through this
+page there you can see lot of stimulus
+electrical
+firing firing is happening isn't it when
+when the light bar is when the light bar
+is horizontal there is no activity there
+is no stimulus there is no activity when
+the light bar is
+almost when it is horizontal there is no
+stimulus when it is vertical vertical
+pattern lot of stimulus isn't it when
+the light bar is almost vertical like
+this What's Happening Here There is some
+spike so as we go from as we go from
+this point is important as we go from
+fully vertical pattern to fully
+horizontal the firing intensity reduces
+so they realized that there must be some
+special neurons in the cat's brain which
+are firing when whenever they see
+vertical Edge or vertical bar a very
+very interesting finding so there are
+some key findings of the research over
+the almost three three decades what are
+those three what are the key findings
+there are some neurons in the virtual
+cortex or there are some neurons in the
+visual cortex visual cortex is a part of
+the brain that is responsible for all
+visual tasks there are some neurons in
+the visual cortex that FES that is
+important that fire when that that that
+fire that fire when when presented with
+lines of specific angles isn't it you
+are line there
+are that what it says I will I will
+repeat there are some neurons in the
+visual cortex that fight
+when when presented with lines of
+specific angles isn't it that is
+important at specific orientation of
+angles isn't it that's important it's
+specific orientation of angles similarly
+there are other neurons which are fire
+firing there are other neurons which are
+firing if light pattern is horizontal
+they said it is very very interesting
+because we have seen C brain Fire by
+just looking at by just looking at
+specific light pattern and with lot of
+research let me also show you a nice
+part in this in this video This is how
+modern visual system understood this
+this is human let me let me say this is
+this is human brain isn't it the human
+brain has multiple layers of visual
+systems isn't it this is this is this
+whole part is called which one this
+whole part is called visual cortex and
+and light light rays come through your
+retina just see this is visual cortex
+your light race will come through your
+retina your eye all these signals pass
+through very dense connections to the
+visual cortex if something happen to it
+if something happened to this visual
+cortex if something happen to happen to
+it we we what happens we lose our vision
+and visual cortex it visual cortex
+itself is very very complex thing there
+are multiple layers of visual cortex
+there are there is an area is called
+there is something area is called V1
+there is an area is called V2 there is
+an area is called V3 there is an area is
+called uh V4 there is an area is called
+V3 V3 a and V3 by there's an area is
+called V3 by VP there there are lots of
+areas and sub areas with within the
+visual cortex that's important just we
+are discussing about visual cortex isn't
+it so there is one area called V1 isn't
+it there is one area called V1 also
+called as primary visual CeX that is
+responsible for they realized that there
+is a special region just to detect edges
+which is literally like Edge detector
+this this primary visual cortex that is
+V1 is responsible for Edge Edge detect
+this is Edge detector system if you
+think about it brilant system and of
+course with a lot of experiments they
+realized that there are Edge detector
+neurons similarly there are neurons to
+detect motion motion detector neurons
+not in primary visual cortex but there
+are complex visual cortex like V2 V3 so
+on isn't it there are some neurons that
+there are some neurons which can detect
+depth isn't it col there are some
+neurons which can detect color there are
+some neurons which can detect shape
+there are some neurons where shape means
+like circles squares Etc isn't it there
+are some neurons which can detect uh
+which can which can detect what can they
+can detect complex objects like faces
+like literally neuron literally neuron
+firing if there is a phase isn't it if
+is a facee your neuron will file the
+most important thing is primary visil
+cortex is responsible for detecting
+edges that's important while while there
+are more complex neurons for lots of
+tasks like let's look at this there is a
+very uh nice page nice page from uh from
+from New York University just see this
+page what it says your V1 represents
+motion your V2 represent stereo stereo
+basically means we have two eyes right
+right most mammals has two eyes using
+these two eyes they detect what is the
+depth in an image that's important isn't
+it what about V3 looks looks at color
+and your V7 is responsible only for face
+recognition and your V3 v3b isn't it
+what is what is the purpose of your v3b
+is for segmentation and V3 A is for uh
+is for texture and your V4 what is the
+purpose of V4 it's it is useful for
+object recognition your empty is for
+attention your MST is basically for
+visual memory isn't it I request all of
+you to go through this particular page
+anyway I will provide this link this
+link uh this link in description section
+of the video I I have the link here on
+how these layers are connected isn't it
+let let me open this this is a link I
+will also provide this link to you in
+the description section of this video
+this is very very nice video explaining
+what is happening let let me just
+explain this video to you so you you
+have your uh let me say you have your V1
+let me say which is connected to V2 or
+V4 they behave like layers in neural
+network the lowest layer the lowest
+level layer if I have an image of fish
+let me say I have image of fish in the
+lower in in in the lower level it
+detects like edges just see it detects
+like edges this is an edge just see the
+fish has got different edges isn't it
+yes but V1 lay V1 layer is connected to
+higher layers like V2 V4 and it in turns
+it connects to V3 isn't it there are
+lots of these connections is the layer
+wise connections and eventually one of
+your top layer you have a neuron in top
+layer which says it is a fish so what's
+happening here literally is What's
+Happening Here literally is there is a
+hierarchical structure isn't it there is
+some what is structure there is Hier
+hierarchical structure where you have
+seen in multi-layer perceptron in
+multi-layer perceptrons if you think we
+have the structure we have our input
+here you have input layer then there is
+one more layer of activation there is
+one more layer of activation and there
+is one more layer of activations isn't
+it so so on so forth similarly even in
+visual cortex various regions so object
+recognition object object recognition
+region fed input from other layers so
+the lowest layer is Edge detector isn't
+it from Edge you can group them into
+regions that is important from Edge you
+can group them into regions and slowly
+these regions will be grouped into
+objects isn't it complete complete
+objects like fish isn't it so this is
+what happening in our brain isn't isn't
+it just what are the key findings here
+again the key takeaway is that there are
+special neurons for Edge detector motion
+depth color shapes and faces extra there
+is nice hierarchical there is nice
+hierarchical structure amongst various
+visual cortex layers like V1 V2 V3 so on
+there is a layered structure which is
+very very interesting actually lots of
+image processing image processing is an
+area in computer science again lots of
+electronics and communication uh and
+electronics and electrical
+engineering electrical engineering
+students also used to study this image
+Crossing which has got a lot which has
+which is very important in convolutional
+neural networks isn't it we will we will
+actually we will actually design con
+conet convolution neural networks which
+are different from multi-layer percepton
+some Concepts that we learned in
+multi-layer perceptrons are still
+relevant here like relus relu activation
+like all of your Adam Optimizer lot of
+Concepts in your MLP still valid for
+convolutional neural networks we will
+learn some more additional Concepts
+especially the concepts of convolution
+which is
+there in which is there in the name of
+convolution neural networks just go
+through this lecture if you have any
+difficulty please keep a comment thank
+you very much
+My dear friends, welcome to 
+classes. This is lecture number 122. In
+this lecture, we will try to understand
+VOF trading methodology. In price action
+trading, false signals are common.
+However, by combining price action with
+the volume analysis, we can effectively
+identify and eliminate these false or
+fake signals. By understanding the
+principle of price action and volume
+analysis as taught by Vov, traders can
+easily filter out fake signals in price
+movement and accurately identify optimal
+buy and sell jones. In this lecture, we
+will focus on understanding price action
+and volume analysis which are key
+components of VOFP trading methodology.
+Now let us try to understand price
+action. To begin, let's analyze simple
+candlestick chart. Each candlestick
+provides important information about
+price movement within a specific time
+frame. Just see these here you have two
+type two types of candlestick charts.
+First one is I can say where it is here.
+If you observe carefully this is open
+this is close means this is this is this
+is increasing isn't it? This is this is
+I can say this one is highest price
+isn't it? Anyway we will try to analyze
+this is close this is open means this
+one is I can say it is green candle
+green candle why because your close is
+higher than open isn't it in similar
+manner this is red candle we already
+discussed this one this part is known as
+body even I can say this part is known
+as spread anyway we will try to analyze
+all these candlestick charts in detailed
+manner Just see this one what it says. A
+candlestick consist of two main parts.
+First one is body. There is another name
+for body is spread. The rectangular
+portion between the open and close
+prices. Just see in this particular
+chart you have a rectangular portion in
+between open and close. That's why this
+one is spread or even you can say it is
+body. What about wick? There is another
+one. Vick even people used to say that
+is SH this this one this one is this one
+is spread that's what I'm saying it is a
+between open and close of course this
+one is green candle this is spread isn't
+it in similar manner just see wick or
+there is another name for wick is shadow
+the thin vertical line extending above
+and below the body representing the high
+and low prices during that period. Just
+see Vick. This is Vick. Yes, this is
+Vick. This one is also Vick. This one
+Vick. This one is also Vick. Isn't it?
+What is Vick? The vertical line
+extending above the body. This is body.
+This one is body. This one is above the
+body. This one is below the body. This
+is known as upper Vick. This is known as
+lower Vick. Isn't it? In a candlestick,
+the upper wick is a section between high
+and body top. Isn't it? In candlestick,
+what is upper? Upper wick. This is upper
+vic. What is? It is a portion in between
+high. This is high. This is body top,
+isn't it? This is body top, isn't it?
+Showing how far how far the price moved
+above the body. The lower wick is the
+section between low. This is low. This
+is section between section. Section
+between this is low. Sorry. This is
+section between low and the body bottom.
+This is body bottom. Isn't it? This one
+is low. This one is a body bottom. This
+is known as lower. It is so simple, so
+straightforward.
+Spread our body. They are of same
+meaning. The spread fonts between the
+open and close. That's what I'm saying.
+This is open. This is closed. This is
+spread or body isn't it? This is open.
+If it is red candle, this is open. This
+is close. This the between open and
+close that portion is known as spread or
+spread or body. A green or bullish
+candle. This is bullish candle. Even I
+can say it's a green candle, isn't it? A
+green or bullish candle means the close
+is higher than open. Just see this
+close. This is close. This is open. Your
+close is higher than open indicating
+buying sentiment. A red this is bearish
+candle or red candle means the close is
+lower than open. Where is close? This is
+close. This is open means price is
+decreased. Isn't it? That's why it's a
+red candle. What it says indicating
+selling statement. Now let us consider a
+typical trading session. The stock open
+at certain price. Let me say your stock
+is opened at certain price. Due to
+selling pressure the the price falls to
+a low. Let me say due to selling
+pressure the price falls to low. Then by
+then by then buying pressure. Let me
+assume first what happened? Because of
+selling pressure it fa it falls to low
+again the buying pressure. Let me assume
+now you have got buying pressure because
+of which pressure? Buying
+buying pressure. Let me assume there is
+a buying pressure. Push the price up to
+the high. Let me assume the stock price
+is pushed to this level. Let me say it
+is high. Finally. Finally. Finally. Let
+me assume. Let me assume it is closed at
+certain level. This is closed here.
+Finally, it is closed at certain level.
+Now, the distance between the open and
+close. What is the distance? Just see
+the distance between this is open. This
+one is closed. This distance. The
+distance between open and close. What is
+this distance between open and close?
+That is known as spread. Isn't it? It
+reflects sentiment for that period or
+that particular stock sentiment isn't
+it? Anyway, we will let us time being
+just try to understand this portion is
+known as spread. What is the spread? It
+is in between. In between this is open
+price. This is closed price. It's a
+portion in between open and spread. Let
+me say what is this spread? Green
+candle. Green candle in the sense this
+is dominating buying pressure. This is
+buying sentiment. Why? Because you have
+green candle. Red candle dominates
+selling pressure. Here it indicates
+selling pressure. Isn't it on the screen
+let me say on the screen we can observe
+two types of spreads. A widespread which
+indicates strong market sentiment and a
+narrow spread which reflects weak
+sentiment. This is narrow spread. This
+is widespread. This is strong sentiment.
+This is weak stren weak sentiment. Isn't
+it? Let me say what what does it mean? I
+will repeat this one on the screen. We
+can observe two types of spreads. A
+widespread which indicates strong market
+sentiment and a narrow spread which
+reflects weak sentiment. Isn't it?
+Understanding. Let us just say this is
+weak weak weak sentiment. This one is
+strong sentiment. Now let us try to
+understand the power of the wick.
+Understanding the power of wicks in
+candlestick patterns. If you add a stick
+just see this is the body this is body
+of the candle isn't it? If you add a
+stick I'm adding a stick what's
+happening here you are adding the stick
+to this body isn't it? If we add a stick
+or wick to the spread or body if we add
+a stick to the body then it become
+simple candlestick isn't it? Is it not
+simple candlesticks? In candlestick
+charts, we generally observe two types
+of candles based on wick size. What is
+this wick size here? Just see based on
+wick size. You can see two types of
+candles. What is first one? We generally
+observe two types of candles based on
+the wick size. Is it? Isn't it? Small
+wick candle. Just see here I have a
+wick. Here also I have wick. This is
+small wick. This wick size is small.
+Small wick candles what it indicates? It
+indicate strong and continuous trend.
+This indicate strong and continuous
+trend. That is important. Strong and
+continuous trend showing that buyers or
+sellers are firmly in control. Isn't it?
+Depending on the the color of the
+candle. What is about large wick candle?
+We are saying depending on the size of
+the wick there are two types of candles.
+First one is small wick candle which
+indicates strong continuous trend. This
+is important which indicates strong
+continuous trend. Another type is large
+wick. This one is large candles. This
+this is large wick. This is also large
+wick. Large wick candles indicates a
+weak continuation suggesting that price
+may soon move sideways or reverse into
+downtrend. This is important. This is
+weak continue trend. Which one is weak
+continue trend? Second type of
+candlestick. What is second type of
+candlestick? What it says? Second type
+of candlestick means long wick
+candlestick which indicate which
+suggesting that price may soon move
+sideways. Just see like this. What is
+long? Upper wick is long, lower wick is
+long means this may be sideways like
+this or this may be downtrend. There may
+be two possibilities. That's what it
+says. Large wick candles indicates weak
+continuation suggesting that price price
+soon moves sideways or reverse into a
+downtrend. I would like to emphasize the
+power of wicks. Whenever you see small
+wicks, it reflects strong market
+sentiment. Just see what is here. Small
+wicks. Here small wicks. Here small
+wicks. Just see first candle here you
+have small wick. Small wick means what
+it indicate? Strong market sentiment.
+That's what I'm saying. Whenever you see
+small wicks, it reflects strong market
+sentiment. A green candle without a
+wick. This one is let me say it's a
+green candle. If you if if you have a
+green candle without a wick, also known
+as marabbou candle, we already discussed
+it. is a law is a strong signal of
+bullish trend indicating higher
+probability of further price increase.
+Similarly, a red candle without a lower
+wick is a strong sign of bearish trend
+showing that sellers are in full control
+and price may decline further. This is
+green color candle have small wick
+indicating scope of increasing stock.
+What is this? This is stock. This stock
+may not increase. Why? Because which has
+got weak sentiment. Isn't it? That
+that's what we discussed. Similarly, a
+red candle I can say red candle
+the whether it is I I already discussed
+this point. Regardless regardless of the
+spread size if candle shows long wicks
+on either side you see long wick on
+either side. I will repeat regardless of
+the spread size. Let's forget about the
+spread size. Regardless of the spread
+size, if the candle shows long wicks on
+either side, it represent uncertaintity
+and weak trend. So far we have discussed
+price action. Just see here that's what
+here that's what it's happened here.
+Just see here this is this one has got
+long wick. Long vick means the stock may
+not increase because of large wicks.
+That is important. This this may not
+weak weak sentiment. Just see good
+identification of bullish trend. Why?
+Because there are no wicks. That's what
+it says. Possibility of increasing
+stock. This one is good identification
+of bullish trend. This one is good
+identification of bearish trend. Isn't
+it? This we already discussed many times
+in our uh previous uh lectures. Just try
+to recall what is this possibility of
+decreasing strong decreasing stock isn't
+it in similar manner this is bad
+identification of trend big wicks
+indicates bad identification of trend
+this is bad here you have got big wicks
+isn't it indicates sideways big wick
+means what it indicates sideways red
+color candlestick with big wicks means
+what it it may be reverse
+Even after sideways it may reverse then
+increase isn't it? Just say this one
+this one is green color candle with big
+wicks isn't it? What does it mean?
+Possibility of not continuing uptrend
+isn't it? Why? Because it is a what does
+it mean? So far we have discussed price
+action that is important. So far we
+discussed price action but remember
+price alone can sometimes create fake
+signals. If you make use only price it
+may generate fake signals. Even within a
+single candlestick misleading signals
+can appear. To understand how to
+identify
+and avoid these fake signals and how to
+use volume analysis to confirm true
+market strength. We will explore these
+concepts in the next lecture. Time being
+I request all of you to go through all
+these points so that we'll try to
+identify these fake signals with volume
+analysis in my next lecture. Thank you
+so much.
+
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number 602 in
+this lecture I will continue my
+discussion on padding and strides I
+already discussed about padding in my
+previous lecture that is in lecture
+Number
+601 let me explain what is stride does
+is suppose I have 6x six Matrix here and
+let's assume I have 3x3 kernel let me
+see what I can do here just observe what
+is my n value here n value 6 and K value
+is three why because k k cross K kernel
+n cross n input image when we took this
+kernel we first place this kernel just
+see what will you do just we are placing
+this kernel here again you are shifting
+by one unit again you are shifting by
+one unit again you are shifting by one
+unit one unit isn't it so that which
+values are getting you will get first
+value second value third value fourth
+value you will get all these values
+isn't it you will get all these values
+again you can shift you again you can
+shift by not only horizont like this
+also first shift you are shifting by one
+unit just see here so that you will get
+these values which values you will get
+here anyway this procedure I already
+discussed I need not repeat it again
+it's simply repetion I can say is isn't
+it so shifting by one is called stride
+of one isn't it because you striding or
+shifting isn't it you striding or
+shifting by one that's the I I can say
+shift by 1 means stride of one but you
+can also have shift by two isn't it
+shift by two is called it is stri of two
+isn't it what what's the meaning shift
+by two is called it it is a stride
+length of two so when I have stride
+length of two what happens instead of
+Shifting by one let me draw this here
+suppose I have 6X 6 Matrix Let Me Assume
+like this what is what is the meaning
+let me draw this 6X 6 suppose if I have
+6x six Matrix like this this is my what
+is this 3x3 Matrix if I'm shifting by
+two shifting by two means what this is
+basically stride of two because this is
+my what is my first this is this is yes
+what is my first value this one is first
+value isn't it this one this one is
+first value and again I must shift it by
+two units that's why just see here you
+are shifting this one by
+2 units just see just see you're
+shifting by you're shifting by two units
+that's why it is this is basically a
+stride of two this window you are
+shifting by two units just observe this
+this particular 3x3 kernel how we are
+moving we are moving by 2 units isn't it
+I I shift two cells isn't it if I speak
+strictly what's happening I I can keep
+the as as we are saying because of this
+one because of this one I will get first
+value because of this one I will get
+second value is is it isn't it I have I
+have uh I have done I I I shifted by two
+cells I can say what we are doing you
+shifting by two cells horizontally when
+I say my stride equal to two I can say
+let me say my stride equal to 2 s equal
+2 not just horizontal stri in instead of
+Shifting one here again we shift two
+here this is this is my shift by two
+here here this is how many units we are
+we are going to shift you are going to
+shift by 2 units so whenever I say my
+stride equal to 2 that is s equal to
+what it means is you are shifting both
+horizontally isn't it just see you're
+shifting now you shifted vertically this
+is known as vertical shift isn't it
+again shifting both horizontally and
+vertically by two pixels stride s equal
+to 2 means what shifting both
+horizontally and vertically by two
+pixels stride is a is a very interesting
+concept just see this is known as
+vertical shift by two pixels again you
+can shift it this just see what is this
+this is known as horizontal shift by two
+pixels my my stra S equal to two means
+you can shift horizontally 2 pixel
+vertically also 2 pixel just just try to
+understand it is very very simple
+concept isn't it stride stride is a very
+interesting concept stride strides helps
+you to reduce strides helps you to
+reduce the size of the Matrix let me let
+me show an example so if if I have an N
+cross n
+Matrix let's say let's say I have n
+cross n Matrix let's say my stride equal
+to S my stride is s and my kernel is K
+isn't it that's K cross kernel K cross K
+kernel n cross n image s is stride size
+K is Kernel size K cross K yes now
+what's happening the result that I will
+get here is this is floor of n- K by S +
+1 into Flor of n- K by S + 1 here you
+are performing The Division operation
+isn't it you are dividing by s look at
+this you have six cells If You observe
+how many cells you have you have six
+Hells six cells here 1 2 3 4 these there
+are six cells let let let me assume what
+is this yes 1 2 3 4 five I assume this
+is one more one more cell actually I
+forgotten to draw this one more column
+here assume there are six cells how
+many how many um how many 3x3 kernels
+can be slide on 6X 6 Matrix isn't it now
+just see I corrected it just see how
+many 1 2 3 4 5 6 six LS isn't it it's a
+6x6 Matrix question is how many 3x3
+kernels can can slide because because
+you are shifting every time by two
+because you are shifting by two you have
+to divide by two that's why n minus K by
+S isn't it so this is very simple
+operation if you have if you have simple
+stride the N by n Matrix becomes smaller
+let's assume you have 6x6 Matrix and
+stride length equal to two just let me
+assume Let Me Assume my stride length is
+equal to my stride length is equal to 2
+if it is stride length equal to what's
+happening what and the kernel is three
+what what what what what do we get here
+what is my n n value is three just I'm
+simplifying the these things my n is
+three my n is 6 that's why I'm
+substituting n = 6 what is my k k cross
+K kernel K cross K kernel means K = 3 my
+stride size S = 2 s = is it 6 - 3x 2 6 -
+3x2 3x 2 means 1.5 it is a floor it is
+floor means what this 1.5 can be treated
+as 1 therefore you will get what M what
+is the output Matrix size 1 + 1 cross 1
++ 1 from the input Matrix of size 6X 6
+just observe from the input Matrix of
+size 6X 6 you will get an output Matrix
+of size 2x2 there are some places where
+you want the input image and output and
+the output image are of different size
+and significantly smaller remember if I
+just had 6X 6 okay with just k equal 3
+if s was equal to 1 Let Me Assume My n
+by n is 6X 6 n cross n is 6X 6 my K
+cross k k = 3 S = 1 what happens you
+will get your input size is 6X 6 6 your
+output size is 4X 4 for S equal 1 but
+what I want actually I want much smaller
+I want much smaller Matrix here you are
+getting 4x4 Matrix but I want much
+smaller Matrix we will see we will see
+why strides are useful in convolutional
+neural network when we build a when we
+will we will see why strides are useful
+in convolutional neur neural network
+when we build a full-fledged
+convolutional neural network isn't it
+strides and padding are simple Concepts
+that we will leverage when we design the
+convolutional neural networks there are
+three concepts that we learn what are
+first one the which which is nothing but
+convolution it is nothing but um we we
+learn the concepts of convolution which
+is nothing but an element wise
+multiplication and addition and we
+learned
+just anyway for n = 6 K = 3 S = 1 you
+are getting 4x4 Matrix isn't it that's
+what we were discussing yes what is this
+padding is used to create this what what
+is the basic idea behind padding padding
+is used to create the same size output
+as input and what is the use of strides
+so what is the purpose of strides and
+strides is used to reduce size of input
+dramatically more more than what a
+kernel would reduce isn't it suppose if
+I have n cross n Matrix let me assume I
+have n cross n Matrix and and if I have
+K cross K kernel with padding p p as
+padding what is my s s is tried s is s s
+is nothing but let me assume s is tried
+isn't it my final Matrix will be what is
+my final Matrix n- k + 2x s this floor
+of n- k + 2 by S + 1 by floor of N - k +
+2 p by S + 1 so your n because because
+of padding has increased what is your
+padding Therefore your n is increased to
+2p Therefore your n becomes n + 2 p as
+the size is in as the as the size by as
+as increased the size by 2p your n + 2p
+isn't it your n + 2p why you are getting
+plus one here just see why you are
+getting plus one is always there from
+starting minus K by S what is this minus
+K by what you got here of course the
+floor of course the floor obviously we
+know the floor very
+simple of course the floor of this
+obviously you have to take floor of this
+isn't it that's what we discussed very
+simple concept so whenever you are using
+convolution padding or stes you can use
+these three simple equations actually
+you don't have to remember these
+equations so padding and strides padding
+strides padding strides and convolution
+are are three of the most important
+operations that that will that will use
+to build that will be used to construct
+convolutional neural networks I request
+all you to go through these Concepts so
+that we will try to understand in future
+classes how to construct a convolutional
+neural networks by using these three
+concept convol convolution padding and
+strides thank you very much
+
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture Number 601 in
+this lecture we will try to understand
+padding and strides so now let's
+understand two concepts the first one is
+called padding and second one is called
+strides just try to recall what is input
+image this 6x6 this is input image 6x6
+image and this is soel Kernel on the
+what you are doing on uh one thing that
+you have that you have might noticed
+earlier in the prev in the previous
+lecture what we were discussing we had
+an input image whose size is 6X 6 isn't
+it what is our kernel size was 3x3 and
+our output Matrix was 4X 4 but what but
+what if I want my output output Matrix
+also to be 6X 6 isn't it what can I do
+the what can I do because this one this
+input image of size 6X 6 I don't want
+output image size to shrink actually
+it's output output image size is
+shrinking why because your input image
+size is 6X 6 your for output image just
+see here you are getting 4x4 isn't it
+4x4 means what's happening here it is
+size here it is 6X 6 here output this
+this is output image isn't it it is
+shrinking by doing some magic if I want
+my output image if I want my output
+image also what is this if I want my
+output image is also is also is same as
+same size as input image what does it
+mean here in this context in this
+particular example your input image size
+is 6X 6 but output image is 4X 4 I need
+output image with 6X 6 what can I do
+let's understand what happens when you
+do
+convolution how do how does the size is
+reduced so imagine we have n byn let me
+see
+we have an image I don't want output
+image size to shrink isn't it here it is
+shrinking 6X 6 is input image my output
+image is shrinking to 4x4 I want input
+image size equal to Output image size
+that's I need isn't it imagine we have n
+byn image isn't it and we have con con
+we we convol this with the K by K kernel
+isn't it so when you do convolution with
+k k by K kernel what happens is just see
+what is my n byn input image size what
+is my kernel size K by K this is the
+this n byn is the input size and K by K
+is Kernel size that we have to
+understand the output size that you get
+will be what is the output size n minus
+K +1 into n minus k + 1 just try to
+recall this example previous lecture
+example n = 6 6x 6 input image my kernal
+size is K by K that is 3x3 in that case
+n = 6 K = 3 what is my N - k + 1 N means
+6 - K means 3 6 - 3 + 1 = to 4 means my
+output size is 4x4 the output size is
+4x4 this is the this is very simple
+formula that we can easily derive
+because both on horizontal both on hor
+this is output size both on horizontal
+and vertical axis you can have only you
+you can only have n minus k + 1 you can
+visually see it here
+just sorry just try it with n = 8 and K
+= 3 isn't it just
+TR just just write it on piece of paper
+and when you draw it on piece of paper
+we will understand it much more easily
+when n = 8 and K = 3 nus K what is n
+minus K is 8 - 3 5 + 1 that is you will
+get 6X 6 Matrix isn't it this is what
+you will get what will you get for n = 6
+K = 3 you are getting 4X 4 isn't it for
+n = 8 and K = 3 you getting 6X 6 this is
+this is if you have not convinced the
+convinced the formula please try it on
+piece of paper so that it will much more
+clearer for you so now what do we want
+we want 6X 6 input what is input input
+IM size is 6X 6 which means n = 6 is a
+kernel K cross K where K = to 3 the
+output that I want here is 6X 6 what
+output I need I need output of size 6X 6
+I want what is output n minus k + 1 n
+minus k + 1 = 6 isn't it I have here is
+what is my n n is 6 K means what 3 n
+minus k + 1 means what you will get you
+will get four isn't it but I want but I
+want n minus k + 1 is six but you are
+getting four what do we do what do we do
+you do simple trick called padding isn't
+it for forgetting same output image size
+if you want to have output image size as
+6X 6 which is equal to input image size
+what I need the trick is called padding
+and this is how this padding works this
+is how this is how padding Works isn't
+it this is uh what is the input image
+size input image size is 6X 6 what do we
+need we need output image size is also
+6X 6 for this there is a technique known
+as padding isn't it imagine if n was 8
+let me let me assume Let Me Assume Nal 8
+instead of n = 6 imagine if n was 8 n =
+8 what would happen if n was 8 my N - 1
+k + 1 that is 8 - 3 + 1 will be six so
+how do how how do to so how do I convert
+this 6 by 6 now I want to convert 6x6
+Matrix into 8 by8 matx my input size
+Matrix is 6 by6 I would like to convert
+into 8 by8 Matrix because if I convert
+from 6X 6 to 8 by 8 by using this
+formula here which is n- k + 1 I can get
+6x6 output Matrix the way I want what do
+we do for that we do something called
+padding padding is a very very simple
+idea which says which says these are
+your what is this your input values you
+have uh input you have input Matrix
+isn't it 6X 6 in input Matrix isn't it
+this 6X 6 if if I if I increase one more
+row here if I increase one row at the
+top just see I'm increasing one row at
+top if I increase one row at the bottom
+and if I increase one one column on
+right isn't it and one column on left
+imagine if I do this so I have I have
+padded isn't it the the the the purple
+part isn't it just see the purple color
+the purple part is called padding the
+way you pad yourself when you go for
+tough sports like rugby you pad yourself
+something something extra so just we are
+padding one extra layer around it this
+padding is called padding by this
+padding is called padding by one because
+you are padding one extra layer around
+it by providing it by one extra layer
+you changing Matrix to from 6X 6 to 8X 8
+Matrix there is 6X 6 Matrix initially we
+are converting it to 8 by 8 by to by
+padding isn't it there is one more
+column you are adding on on on on on
+left and on right one more row on top
+and bottom isn't it that and so when I
+say padding by one you are padding it by
+one which means when you when you when
+you pad it by one the size of the Matrix
+increases so if you have a matrix of
+size n by n and if you pad with P = 1
+you will get what will you get yes this
+is padding by one isn't it n byn Matrix
+your original Matrix size is n byn
+Matrix what you are doing here and if
+you pad it by with P = 1 you will get n
++ 2 by n + 2 Matrix isn't it okay very
+simple concept now the question here is
+what values put what values will you
+keep in these extra cells isn't it the
+simplest the simplest concept is called
+the simplest concept is called zero
+padding you just put zero values in
+these extra cells you simply put zero
+values here isn't it just we simply put
+zero values here that's called zero
+padding that's that's simply called zero
+padding zero padding can introduce some
+sort of error I don't call it as error
+some interesting effect I can say it is
+some it it will create some interesting
+effects for example uh uh just say this
+one zero padding what is used zero
+padding is used a lot it is used zero
+padding introduce some error zero
+padding used a lot in convolutional
+neural network zero padding is very very
+simple concept you basically pad one
+extra on the Left Right top and bottom
+and fill all the values with zero this
+is one option that is extensively used
+in convolutional neural networks there
+is a second operation in image
+processing where instead of padding it
+with zeros you pad it with values see in
+the next pixel like for example just see
+this one for example just here which one
+which one which one is nearer to zero
+near to Z is 255 Z here here Z here just
+see here here I have zero value isn't it
+now I'm instead of keeping this one in
+this place just I will replace I will
+replace zero with this 255 like this
+isn't it that's what that's what it says
+zero here if I put 255 here because the
+nearest pixel here is 255 here also if I
+put I I can put 255 like this isn't it
+if if I put 255 if I place 255 in just
+see I am placing 255 as this zero is
+nearer to that 255 number just see here
+what's happening just observe carefully
+here I'm filling here I'm filling this
+zero with this 255 why because this is
+nearer this zero with this 255 this
+which one is nearer 255 this is nearer
+255 2 255 to all these zeros are filled
+with nearest values that's what that's
+what it says that's what it says there
+is a question what happens to this pixel
+just see this pixel for this pixel this
+is nearer this is nearer this is nearer
+isn't it what value should I fill here
+problem is what type of value should I
+fill here so there's a confusion isn't
+it what is the in that case what you
+have to do some same value padding you
+have to apply here same value padding
+nearest row or nearest column
+replication here this is column padding
+which is which is nearest for this one
+this one nearest column is this one
+therefore therefore what are what are
+you doing here this is nearest colum
+this is a column this is nearest column
+which one is nearer this zero isn't it
+this is known as what is this technique
+name same value padding some same value
+padding is not used if you speak
+strictly same value padding is not used
+extensively in the whole of the
+convolutional neural networks but can be
+used zero padding zero padding is much
+more simple that's it so by creating
+zero padding I'm able to Simply create n
+byn Matrix that I want so let's let's go
+go back to the that case by creating
+zero padding I'm able to Simply create n
+byn Matrix output Matrix isn't it I will
+get and for example case 1 what is case
+1 your n byn is input image size your
+convolution size is K by K you will get
+n minus k + 1 into n minus k + 1 but I
+need output image size also n byn so
+this is case 1 this is your simple
+convolution what is my case two case 2
+is you have n byn Matrix you have a you
+you have K by k k cross K kernel and you
+have a padding P here we we are newly
+introducing this concept padding in case
+one there is no padding if you apply
+padding if you have a padding P value P
+then what is the final resultant that
+you get you will get n minus n minus k +
+2 p + 1 N - 2 k + 2 p + 1 If You observe
+carefully What's Happening Here you are
+n minus k + 1 here this also n- k + 1
+means here you are getting 2 p extra
+here also you have n minus k + 1 just
+see n minus k + 1 you are getting 2 p
+extra that's important that one must
+realize this 2p you getting which one is
+extra this one is extra if you compare
+with previous one this is extra this 2p
+here you don't have plus 2p is isn't it
+why is it so because your n has changed
+because of padding isn't it your n has
+changed because of padding your n has
+changed to your n because of padding
+because of padding this your n is
+converted into n + 2p here also you
+because of padding your n is converted
+to n + 2p isn't it that's what it says
+just try just see you your n is
+converted into n + 2p here padding value
+is one for example if I take my padding
+value is one because I'm applying one
+additional uh additional column on left
+one additional column on right and one
+additional row on the top one additional
+row on the bottom isn't it you are
+padding with one so when you pad when
+you pad with p p equal 1 in P equal 1 in
+this case the size of the Matrix the
+input image goes from your input image
+it will goes from what happens just see
+you your input image goes from n n to n
++ 2p isn't it because you are adding one
+one at right one at left one at top and
+one at the bottom isn't it your Min - k
++ 1 had just see your minus k + 1 is
+same just like earlier case isn't it
+just see this one your minus k n- k + 1
+n- k + 1 here also you have n- k + 1
+it's same your n has become n + 2p
+that's important your n has become n +
+2p your minus k + 1 is in both the cases
+means case 1 case 2 that's because your
+n has transformed into n + 2p this is
+simple we'll see more cases this is what
+padding does padding is very very simple
+hack zero padding zero padding is
+something which is used extensively
+because you need output as exactly same
+size of the the input image whatever the
+kernel size is and remember your kernel
+can be 5 cross 5 also it need not always
+3 cross 3 let's let's now forget that uh
+that fact your kernel can be any size
+they're typically Square matrices and
+not necessarily always but for most
+image processing kernels they are square
+matrices just try to understand for
+example in this case what's happening
+you n if I say n equal 6 this is 6X 6
+Matrix you are 6 by you are padding P =
+to 1 then what is output here n- K N
+means what 6 - k k means what here K
+cross k k means 3 6 - 3 + 2 p padding
+your padding value P = to 1 therefore 2
+into 1 + 1 What's happen 6 - 3 3 3 + 2 +
+1 5 + 1 6 you will get 6X 6 Matrix your
+input Matrix size is 6X 6 your output
+Matrix means by using padding your input
+Matrix 6x6 or after padding it it became
+8 by8 but originally it's 6X 6 your
+output also are getting 6X 6 that's the
+that's the basic idea behind padding I
+request you to go through this lecture
+once or twice if you have any difficulty
+please keep a comment what we did here
+by padding you are equating you you are
+converting your 6X 6 into 8X 8 by
+padding and you will get your 6x6 Matrix
+means your input size 6x6 you are
+getting 6x6 output of course your input
+image is converting 8 by8 by after
+padding with P = to 1 just go through
+this lecture if you have any difficulty
+please keep a comment thank you very
+much in my next lecture we will try to
+understand
+strides
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number
+361 in this lecture we will try to
+understand Vector calculus in this one
+we will try to understand grad we will
+analyze we will understand
+vector
+differentiation what is this vector
+differentiation vector for
+differentiation we will try to
+understand
+grad till now we assumed that our X is
+scalar that's what we assumed isn't it
+remember our f ofx is a function which
+is function of scalars what is your F
+ofx function
+of scalars isn't it now what if x is a
+vector if x is a
+vector if x is a vector because remember
+in whole of machine learning or data
+science we we assume things to be Vector
+that's only way we can operate if it is
+Vector you can operate in high
+Dimensions isn't it high
+Dimensions High dimensions High
+dimensional space isn't it so imagine
+let's take an example let's let's take a
+simple example suppose if my y equal to
+what is my y Let Me Assume like this my
+y equal
+to let me write my y = to a
+transpose X let's assume X X is a vector
+let's assume X is a vector what is the
+dimension of this Vector X1 X2 so on XD
+isn't it similarly a is a
+vector a is let me say a bar is a vector
+how can I write a bar I must write A1
+A2 so on let me say a is it it all these
+A1 A2 so on a d are constants and what
+does it mean what is the meaning of Y =
+to a transpose X means y = to summation
+of how can I write y = Sigma I = 1 to D
+I can write it as a i x i isn't it what
+is this a transpose X means how can I
+write a transpose means what I can write
+Vector like this A1
+A2 so on a d isn't it this is a
+transpose into X means what X1 X2 so on
+XD this will become A1 X1 + A2 X2 plus
+so on a d XD this what is what is the
+meaning of y = i = 1 2 d a iix i mean
+meaning is A1
+x1+ A2 X2 plus so on a d XD that's what
+it says y = a transpose X is same as y =
+Sigma I = 1 to d a i this can be I can
+write y = f ofx therefore I can say F
+ofx = to Y = this one now if I want to
+compute derivative of f ofx what we have
+to find derivative of f f of x with
+derivative of f let me say derivative of
+f with respect to x what is this x
+remember this x is a vector let me say
+this x is a vector this is vector
+differentiation isn't isn't it X is a
+vector this x here is a vector not
+scalar now how do we do it how will how
+one can perform vector differentiation
+because we learned how to do it for
+scalars
+but but what about Vector for that there
+is a special terminology so DF by DX if
+x is Vector DF by DX if x is a
+vector it is often written as it is
+often written as Del of d x d of f with
+respect to X isn't it this symbol this
+this is symbol this D what is this d d
+this one is
+symbol just anyway we will see we will
+try to understand this just see this DF
+by DX Let Me Assume X is a vector
+therefore I can write this D this is
+known as grad I can say or D isn't it
+Gro or it is often called as D it is Del
+f X isn't it D of f how can I how can I
+read this is D of f d of f with respect
+to D of f with respect to X so when you
+write this you immediately understand
+that X is a vector what does it mean xar
+is a vector and F is a function on the
+vector X so typically when you write D
+of by DX when you write DF by DX you
+assume that X is scalar and F is and F
+is scalar function typically this is the
+case f is scalar function typically this
+x is
+scalar scalar this is scalar function
+isn't it yes X is a scalar and F is
+scalar function but when you write this
+when you write using grad symbol when
+you write using using grad when you
+write using grad or d symbol I can say
+you immediately understand it is a
+vector differentiation let's understand
+what is vector differentiation so Del
+what how we can write how we can read
+this one d f with respect to X so DF
+with respect to X is nothing but
+remember X has D components isn't it X
+is a d diim Vector just try to recall
+what is my x x is equal to X1 X2 so on
+XD isn't it now what is my DF with
+respect to X just say DF with respect to
+x what it is DF by with respect to X1 DF
+by with respect to X2 DF by with respect
+to XD here x is a vector isn't it a d
+dimensional Vector so when you do vector
+differentiation the resultant that you
+get is also a vector isn't it it's a
+vector such that first value in Vector
+is DF by dx1 what is my DF by dx1 what
+does it mean my second Value First value
+is DF by dx1 second value second value
+is derivative of function f with respect
+to X2 that is DF by dx2 so on and so
+forth thus this particular one let me
+say this one is also belongs to why
+because you are with respect to X1 with
+respect to X2 with respect to XD means
+what it also belongs it also belongs to
+belongs to Rd means it is also a d
+dimensional Vector so when you
+differentiate a function with respect to
+Vector resultant that you get is a
+vector which is also D dimensional
+vector so instead of writing DF by DX we
+often write this one we can often write
+it as do F by do X1 isn't it to show
+that that is partial differentiation
+because what am I doing I'm partially
+differentiating f with respect to with
+respect to only X1 not differentiating
+with respect to all the components of X
+isn't it X X has D components X1 X2 so
+on XD D components I'm not using all of
+them do F by dox1 f is a function which
+has more values than more values isn't
+it here we we are differentiating with
+respect to F we are differentiating f
+with respect to X1 if you look at From
+notational perspective Del f with
+respect to X this is this is nothing but
+this is a vector DF with respect to X is
+I can write it as I can write it as with
+in in in the form of do F by dox1 I I
+can replace DF by dx1 with with do F by
+dox1 DF by dx2 do by dox2 which this is
+this is Vector and again this Vector Del
+f with respect to X that is D
+dimensional Vector it is belongs to r^ D
+isn't it the that's what this means so
+let's go to the example that we had
+example that we had was f ofx = y = a
+transpose X that is Sigma I = 1 to d a i
+x i when I do this what happens so if I
+do grad of f with respect to x what is
+the first component do F by dox1 isn't
+it just see my first component is do F
+by dox1 my second component is f by dox2
+so on my D component is do F by doxt
+what is f ofx equal to F ofx = to Y just
+just let me write it as just let me
+write f ofx = y = to a
+transpose xar let me say that is Sigma I
+= 1 2D this is
+Sigma Sigma I = to
+1 to d a i x i I can write it as A1 X1 +
+A2 X2 plus so on a d XD isn't it now
+what is my do F by dox1 I'm
+differentiating f with respect to X1
+partially if I differentiate this one
+with respect to X1 what will I get here
+X1 with respect to X1 is 1 I will get A1
+all other constants in similar manner
+what is my do F do F by dox2 what is my
+do F by dox2 A2 so on what is my do F by
+do XT that is a isn't it therefore I
+will get do F by dox1 A1 do F by dox2 A2
+do F by dox2 a I will get again I will
+get a vector a bar A1 A2 so on a what
+does it mean this is basically a bar so
+when I do partial derivative what I get
+here is corresponding to do F by dox1
+I'm getting A1 and do F by dox2 I'm
+getting A2 that resultant Vector DF with
+respect to X is a bar so derivative of a
+transpose I can say derivative of
+derivative means Del grad a
+transpose x a a transpose xar even if
+you want you can say a transpose X is a
+bar isn't it that's what it says very
+very simple so that's what DF off with
+respect to X you're getting a bar very
+very simple so if you think about it if
+you had something like if it is scalar
+differentiation d by DX of a xal a you
+will get a scalar d by DX of AAL to a
+similarly even in the case of vectors
+you will get vector Vector a bar here
+you will get Vector a bar here D by DX
+of xal to a means here is scalar
+differentiation it's not scalar d by DX
+of xal a this this is scalar this a is
+scalar so there is a lot of similarity
+between vector differentiation and I can
+say there is a lot of similarity between
+vector differentiation and scalar
+differentiation but the most important
+thing is you have to note that a bar is
+here a bar is a vector this a bar is a
+vector it is not scalar remember our
+logistic loss what is our logistic loss
+what is logistic loss mean just to try
+to recall our previous classes about
+logistic loss remember our logistic loss
+if you remember how can I write this
+logistic law function let me write yes
+let me write like this my logistic loss
+is here let me write yes I will
+write yes my logistic loss L = Sigma I =
+1 to n log of 1 + e p of - y i into W
+transpose X this is my logistic loss
+Lambda into W transpose W this is L2
+regularization actually what is this
+this is L2 regularization if someone is
+not having an L2 conceptual
+understanding on regularization I will
+discuss time being this this this is L2
+regular regularizer this is this is what
+my logistic loss function with the
+regularization looks like isn't it
+remember here XI Yi are constants here x
+i y i are
+constants I can say x i y i are
+constants what does it mean are constant
+because they're coming from training
+data they're coming from
+training training data isn't it that
+that you have uh already been given here
+the vector is W one must understand your
+vector is W is a vector the variable
+here is you have l l is a function of w
+I can say what is this l l is a function
+of w now to find Maxima and Minima for
+this just try to understand there is L2
+regularizer there L of w now you have to
+perform you have to find what what you
+have to do what what you have to do here
+your L is a function of w now to find
+Maxima and Minima for this you have to
+perform derivative of L or grad of L
+isn't it grad of L with respect to W
+because W is a vector here that's why
+I'm writing this notation so when I
+write this notation let's let's see how
+we can compute let's take this term
+first let me take this particular term
+Lambda Lambda into W transpose W isn't
+it is it is just like this is just like
+w Square just refer my Vector dot
+product lecture you can understand you
+can write it as W squ isn't it you think
+that for a sec what is this for a sec
+forget about W is a vector think this
+like if it is equal it just W transpose
+W is w s what is the differentiation of
+uh what is the differentiation of Lambda
+into W Square you have to as W is a
+variable you have to differentiate with
+respect to W therefore what will you get
+if I differentiate with respect to w d
+by DW of Lambda into w² is equal to 2
+Lambda Lambda 2 2 Lambda W isn't it now
+let's go back to the vector equ equation
+if W transpose W is a vector I will also
+get a vector at the end of 2 Lambda W
+here W is a vector how can I find what
+what we have to do just let me let me
+find this one which one let me find this
+Del of L with respect to W what will I
+get it is simple and straightforward
+chain rule I have to apply how can I
+apply chain rule if I differentiate with
+respect to W first what will I get here
+just let me erase little bit here yes
+let me write this function again L equal
+to I if I speak strictly this is
+function of w l of w L2 regularizer
+Sigma I = 1 to n log
+of log of 1 + e x p of minus y i into W
+transpose x i isn't it yes yes plus
+Lambda into W transpose w now let me
+differentiate vector differentiation how
+can I do this vector
+differentiation
+Del L with respect to W what will you
+get here inner inner part if I
+differentiate with respect to W I will
+get - y i into X I will get isn't it
+again E power x differentiation is E
+power x this in inner one one
+differentiation of one is 0 0 Plus
+what will I get here e p
+of- y i into W
+transpose W transpose x i isn't it yes
+yes now let me say like this by again
+log log X differentiation is 1 by X
+therefore I will get 1 + e x p of - Yi
+into W transpose of XI isn't it plus
+this is Lambda into w² you'll get Lambda
+into 2 W isn't it this is this is Vector
+uh differentiation yes now this now this
+I I need to equate this one to Zer isn't
+it now I must
+equate Del of L with respect to w = z
+solving this is very very difficult
+solving this
+is
+very
+very
+difficult you cannot it's difficult to
+solve s isn't it solving this solving
+this is not trivial here W is a vector
+solving this is not trivial and here we
+will learn computational techniques or
+programmatic techniques called
+gradient
+gradient gradient descent
+gradient descent yes gradient descent
+techniques to solve these problems very
+intuitively we will try to understand
+what is gradient descent in my next
+lecture in my next lecture we will try
+to understand geometric
+intuition behind this gradient descent
+algorithm time being just understand
+this is this is a regularizer this
+regularizer is a function of w now this
+is where W is a vector I have to find to
+find Maxima or Minima I to find vector
+differentiation just we are
+differentiating vector differentiation
+but to solve this problem it's very
+difficult to solve we cannot it is very
+combersome process difficult
+process therefore there is a technique
+there is a technique what is the
+technique uh the technique name is
+called gradient decent technique which
+is used to solve this particular
+equation in my next lecture I will
+discuss about gradient descent algorithm
+thank you very much
+
+my dear friends welcome to 
+classes on applied data science with
+python this is lecture number 600 in
+this lecture I will continue my
+discussion on convolution edge detection
+before understanding this lecture I
+request all of you to go through my
+previous lecture uh this is the slide
+which I collected from my previous
+lecture that is
+599 why is this is an edge detector just
+see what is your input image it's a 6x6
+just see this input image size is 6X 6
+what is my kernel size 3x3 yes kernel
+size is 3x3 yes what is your output
+image size 4X 4 that's what I'm writing
+4x4 this is my uh output image 4x4 image
+so this is output we got because your
+gray scale image can only have the
+values between 0 to 2 55 isn't it what
+is zero 0 is the minimum value in Gray
+scale image and 255 is the maximum value
+in grayscale image so if you renormalize
+let me renormalize this output image by
+ensuring ensuring the maximum value in
+the image if if I do it in such a way
+that what is the maximum value in the
+image maximum value in the image is zero
+so what is the maximum value in your
+gray scale that is 255 now what we have
+to do we will replace we will replace
+all zeros with 255 just let me say I'm
+replacing zeros with 255 so what we are
+doing here simply normalizing by using
+maximum value in similar manner what is
+the minimum value in the gray scale
+image that is zero and what is the
+minimum value in your output image Min -
+1 020 therefore all minimum values of
+output image let me replace them with
+zeros isn't it so the output image that
+you get here if I have to draw it as an
+image you will get bright area in the
+center just see Zero means we are
+assuming it's a bright area or white
+area where you are getting zero rows in
+between therefore two bright lines or
+white color isn't it two bright lines in
+the center and everything above that is
+dark even everything below that is dark
+isn't it because remember what did we
+say we said 255 is a dark area isn't it
+and zeros are light area you will get
+literally 2 pixel width area which is
+like light color why because in Center
+you are getting zeros therefore there
+are we are assuming zero is related to
+white color of course depend on the
+convention sometimes people may assume
+generally zero is treated as black color
+anyway for in this particular lecture
+I'm assuming zero represents white color
+isn't it yes two PX you will get
+literally two pixel width area which is
+light color or white end color using
+this dark this how many dark areas you
+have two dark areas so corresponding to
+corresponding to an edge in your image
+you are going to get two white lines
+isn't it so if you apply soble Edge
+detector what you are going to get is if
+your image has horizontal Edge yes this
+this one as this one is this one is
+white region this one is dark this one
+is dark therefore what will you get here
+you will get an edge isn't isn't it yes
+there are two horizontal lines that's
+important there are two horizontal lines
+white lines in between you have white
+lines corresponding to place where you
+have an edge isn't it and everywhere
+everywhere you don't have an edge you
+will get a dark region so this is for
+horizontal Edge I hope you convinced now
+that applying convolution using soel
+horizontal Edge detector isn't it
+remember this is an horizontal Edge
+detector soel horizontal Edge
+detector helped helped us in detecting
+horizontal Edge in an input image soel
+is just one type of edge detector there
+are are tons of edge detectors in an
+image processing you might wonder okay
+this is detected horizontal Edge but
+what about vertical Edge imagine I have
+an image like this just see this is this
+is type of horizontal Edge detector what
+is soel soel is horizontal Edge detector
+so if I imagine I have an image like
+this isn't it it is 6x6 image isn't it
+this is whole region is light I have
+light region and I have dark region
+isn't it yes here what do you what do
+you have here you have a vertical Edge
+isn't it you have vertical Edge you are
+soel horizontal your soel horizontal
+Edge detector cannot detect this is a
+horizontal soel is so this is a
+horizontal Edge detector it can't detect
+a vertical Edge that's important it
+can't detect a vertical Edge there is
+something called soal vertical Edge
+detector the way it looks is this it
+it's also a 3X3 kernel what it looks
+like this is looks like this plus 1 0 +
+1 + 2 0 - 2 + 1 0 - 1 this is that's all
+it look like so given this input image I
+have input image you you can always
+write what is input Ms SI 6x6 you can
+always write this 6x6 Matrix the way it
+looks like this is you have what we are
+assuming we are representing zero as
+light color therefore I can if you speak
+strictly zero is useful for black color
+anyway I'm representing zero for white
+color here but in general zero is white
+color uh Z is black color 255 is white
+color this is small correction yes uh
+let me proceed with the convention which
+we are using if you speak strictly zero
+represents black color
+255 represent white color anyway let me
+proceed the notation which I'm using yes
+this is
+the just here in this particular lecture
+I'm representing uh White region with
+zero and block region with 255 instead
+of now what is the representation for
+Block pixels as we are assuming number
+255 just I'm keeping 255 for white color
+I'm keeping Z therefore I'm keeping zero
+for zero value for white white color
+pixels now I wanted to do it as an
+excise in the notebook where take this
+image just take this 6x6 image appli The
+Edge detector which Edge detector
+vertical Edge detector convol these two
+just see convol these two and see what
+is the output you will get you will get
+4x4 output just we discussed isn't it
+I'm taking my image 6x6 image now I am
+using 3x3 soel vertical Edge detector
+you will get such a way that you will
+get two lines of Z CL just if you apply
+just I'm applying convolution in in
+between input image and soel Edge
+detector what will you get you will get
+two lines of zeros here in between you
+will get two lines of zeros you will get
+2 pixel white what is the width of that
+Z pixel 2 pixel two pixel wide zeros
+rest every rest
+everywhere everywhere else you will get
+dark region you have dark region isn't
+it just see if I apply if I apply if I
+apply soel vertical Edge detector on
+input image here I will get dark area
+here I will get dark area in between two
+pixel wi zeros same same mechanism isn't
+it 2 pixel wide light region I will get
+exact L the way we have done for for
+soel horizontal Edge detector just try
+to recall soel horizontal Edge
+horizontal Edge detector what we have
+done here first conol you you you will
+get a bunch of values if you conver you
+will get bunch of values and then what
+you did you normalized it normalize
+using Min and Max isn't it here we got a
+horizontal edge of white pixels isn't it
+that that's what we discussed for horen
+same thing you can if just repeat you
+just repeat this using soel which which
+Edge detector soel vertical Edge
+detector soel kernel if you use the soel
+vertical Edge detector kernel it is a
+3X3 kernel so Edge detection in image
+processing in classical image processing
+is done isn't it the summary of it is
+this I wanted to do this as a notebook
+assignment it's very very simple if you
+just play with it you will understand
+you will understand this soel vertical
+Edge detector so there is a nice page
+for soel Edge detector so this is a
+Wikipedia page isn't it page for soel
+Edge detector I I I I show a nice
+example what happens here so if you take
+this input this input image just say
+this is my
+uh in Let Me Assume uh this is my in I
+have input image image um what is this
+in this particular Wikipedia I'm
+collecting just is this is the Wikipedia
+page on soel uh Edge detector where Let
+Me Assume this is my input image which
+one is my input this is input this is
+input image this is output image yes
+this this pictures I collected from
+Wikipedia is isn't it imagine look at it
+has horizontal edges just see you have
+horizontal edge here just see this is
+horizontal Edge this this is almost
+horizontal horizontal Edge in input
+image isn't it there are also some
+vertical lines isn't it so so what they
+have done here is they apply the soal
+edge detector and the final result looks
+like this there is a horizontal region
+here corresponding to horizontal region
+you have thick white line just see you
+have you horizontal here you have
+horizontal one just see in this one you
+here horizontal here you have vertical
+Edge If You observe carefully in this
+particular image this is horizontal this
+is vertical isn't it the what what they
+are doing they are applying they're
+applying both they apply the soal edge
+detector and the final result looks this
+is my final result this is
+output this is final result or output I
+request you to go through this uh this
+particular Wikipedia page isn't it there
+are horizontal regions here
+corresponding to horizontal regions you
+have thick white lines here just see
+this is horizontal line This is
+horizontal line corresponding to this
+horizontal line I have thick white thick
+white line here look at look at this
+region there is there is no Edge just
+you for for particular for this
+particular horizontal Edge what am I
+getting what I getting just see I'm
+getting let me show like this this is
+horizontal Edge this is corresponding
+white region isn't it for example let me
+say there is no edge here if you speak
+strictly If You observe carefully there
+is no edge here just see now this is
+input input image this is this is my
+input image this is my output image as
+there is what is happening there is no
+Ed here that's why it it is completely
+Block in the output image isn't it in
+input image there is no no edge here in
+output what you are getting you're
+getting completely black wherever there
+is a horizontal Edge there is a lot of
+white color that's important isn't it if
+You observe If You observe wherever
+there is a horizontal Edge you are
+getting lot of white
+just see they apply gy I have matrices
+GX and gy if possible please go through
+this particular Wikipedia page they get
+an image one just they are applying gy
+and they they apply gy they get an image
+image one let's say they apply GX they
+are getting they are getting image two
+we get this image two this GX and gy
+just see the GX gen they got two images
+because of gy I'm getting image one
+because of J means I have soel
+horizontal Edge detector vertical Ed I'm
+applying both of them on input image I'm
+getting i1 and I2 image 1 image 2 they
+got two images one with horizontal Edge
+detector one with vertical Edge detector
+they got two Edge detectors they sum
+both of these I have image 1 and image
+two now I'm summing both of these images
+then the resultant image is in this
+isn't it just this is resultant image
+this is your input image let me say this
+is my input image this is my output
+image on input image I'm applying soel
+Edge detectors horizontal Edge detector
+as well as vertical Edge detector and if
+I I will get two images I'm combining
+the two images this will be the output
+this will be the output of that
+particular two images I'm combining two
+images in the in this image we will see
+both just see in this image I can see
+both vertical edges and horizontal edges
+you can also see some diagonal edges
+just see this is some diagonal Edge what
+is this this is some diagonal this is
+diagonal Edge isn't it so what's
+happening here if it is fully white the
+white the white or it is the more hard
+just see here here this is this is fully
+white just say this is white and it will
+become fully white color just just I
+request I request all of you I request
+all of you to go through this article so
+that you will get clear in intuition on
+this isn't it yes what it says in a
+nutshell what are we doing here we are
+using the operation of convolution for
+Edge dete detction and we know Edge
+detection what are what are present in
+V1 just try to recall V V1 V1 which is
+present in visual cortex or primary
+visual cortex what is the duty of
+primary visual cortex Edge detection
+isn't it and we use convolution as one
+of the most important operations and we
+will use convolution as one of the most
+important op operator isn't it most we
+will use convolution we will use
+convolution as a core operator to design
+our convolutional neural networks or
+conet so all of our conet so all of our
+con conet our conet will use left and
+right this convolution isn't it yes the
+who is using convolution all convolution
+neural networks are using this
+particular concept convolution but
+remember there is a nice analogy between
+convolution and Vector multiplication so
+what is convolution literally in a
+nutshell it is basically given two
+matrices you are doing element wise
+multiplication followed by addition on
+matrices when you compute W transpose X
+in multi-layer perceptrons when you do W
+transpose X you have simple neuron what
+what what are you doing here just try to
+recall you're taking each of the
+elements of w and X you perform element
+wise product this is nothing but dot
+product element wise product means what
+it's a DOT product dot product between
+dot product between W and x what does it
+what does dot product means element wise
+multiplication element wise
+multiplication multiply corresponding
+elements and then use some so convol
+ution is nothing but convolution is
+nothing but the generalization of dot
+product even in dot product you are
+doing element wise multiplication and
+addition but you are doing on Vector
+instead of instead of matrices so very
+simple way to understand convolution
+operator it is very similar concept to
+dot product this is a DOT product very
+similar to dot product but done on
+matrices so we are doing element wise
+multiplication and addition and this
+analogy analogy of this relationship
+between do product the relationship
+between dot product and con this is a
+relationship between dot product and
+convolution I will revisit this when we
+learn convolution layer in neural
+network but if you think about
+mathematically dot product is done on
+vectors and convolution is done on on
+matrices matrices of course there are
+convolution operations on on vectors in
+a nutshell there are some they are same
+they are same element wise
+multiplication and followed by addition
+I hope you got good understanding of how
+Edge detector works and the and the core
+concept of convolution which is
+fundamental to the whole idea of
+convolution neural networks I request
+all of you to go through this lecture if
+you have any difficulty please keep a
+comment thank you very much
